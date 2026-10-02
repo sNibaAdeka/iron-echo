@@ -1,0 +1,74 @@
+{
+  "schema": "iron-echo-ui-theme/0.1",
+  "status": "prepared-source; not imported into UMG",
+  "colors": {
+    "background": "#11151B",
+    "surface": "#1A2028",
+    "surfaceRaised": "#252D38",
+    "text": "#F3F0E8",
+    "textMuted": "#B7C0CB",
+    "primary": "#E9B15A",
+    "onPrimary": "#11151B",
+    "accent": "#72CCD5",
+    "success": "#90CBA9",
+    "warning": "#E9B15A",
+    "error": "#FF9C91",
+    "outline": "#91A0B0",
+    "focus": "#E9B15A",
+    "disabledText": "#9BA6B5",
+    "disabledSurface": "#252D38",
+    "healthPlayer": "#E9B15A",
+    "healthOpponent": "#72CCD5",
+    "stamina": "#90CBA9"
+  },
+  "contrastPairs": [
+    {"label": "Body / background", "fg": "text", "bg": "background", "minimum": 4.5},
+    {"label": "Body / surface", "fg": "text", "bg": "surface", "minimum": 4.5},
+    {"label": "Body / raised", "fg": "text", "bg": "surfaceRaised", "minimum": 4.5},
+    {"label": "Secondary / background", "fg": "textMuted", "bg": "background", "minimum": 4.5},
+    {"label": "Secondary / surface", "fg": "textMuted", "bg": "surface", "minimum": 4.5},
+    {"label": "Secondary / raised", "fg": "textMuted", "bg": "surfaceRaised", "minimum": 4.5},
+    {"label": "Primary label", "fg": "onPrimary", "bg": "primary", "minimum": 4.5},
+    {"label": "Disabled label", "fg": "disabledText", "bg": "disabledSurface", "minimum": 4.5},
+    {"label": "Accent label", "fg": "accent", "bg": "surface", "minimum": 4.5},
+    {"label": "Success label", "fg": "success", "bg": "surface", "minimum": 4.5},
+    {"label": "Warning label", "fg": "warning", "bg": "surface", "minimum": 4.5},
+    {"label": "Error label", "fg": "error", "bg": "surface", "minimum": 4.5},
+    {"label": "Focus outline / raised", "fg": "focus", "bg": "surfaceRaised", "minimum": 3.0},
+    {"label": "Control boundary / surface", "fg": "outline", "bg": "surface", "minimum": 3.0},
+    {"label": "Player health / raised", "fg": "healthPlayer", "bg": "surfaceRaised", "minimum": 3.0},
+    {"label": "Opponent health / raised", "fg": "healthOpponent", "bg": "surfaceRaised", "minimum": 3.0},
+    {"label": "Stamina / raised", "fg": "stamina", "bg": "surfaceRaised", "minimum": 3.0}
+  ],
+  "metrics": {
+    "minimumTarget": 48,
+    "minimumGap": 8,
+    "focusThickness": 3,
+    "bodyText": 18,
+    "smallText": 16,
+    "buttonHeight": 56,
+    "radius": 4,
+    "safePadding": 24,
+    "spacing": [4, 8, 12, 16, 24, 32, 48, 64]
+  },
+  "motion": {
+    "enterSeconds": 0.24,
+    "exitSeconds": 0.096,
+    "pressSeconds": 0.16,
+    "staggerSeconds": 0.04,
+    "enterTranslateY": 12,
+    "pressedScale": 0.98,
+    "reducedMotion": {"translate": 0, "scale": 1, "duration": 0}
+  },
+  "typography": {
+    "mockupFont": "DejaVu Sans, Arial, sans-serif",
+    "runtimeFont": "Use project-approved Cyrillic font; verify engine Roboto family before selecting",
+    "bundledFontFiles": [],
+    "timer": "tabular digits if supported by selected font"
+  },
+  "ownership": {
+    "author": "Codex / IRON ECHO",
+    "thirdPartyArtwork": false,
+    "license": "Original project artwork. No paid assets or external fonts bundled."
+  }
+}

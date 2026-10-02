@@ -1,0 +1,250 @@
+{
+  "schema_version": 1,
+  "contract_version": "IE-VIS-DRAFT-0.1",
+  "status": "draft_not_opus_accepted",
+  "generator": "Tools/Blender/build_robots.py",
+  "blender_version": "4.5.7 LTS",
+  "export_space": {
+    "units": "meters",
+    "axis_forward": "-Y",
+    "axis_up": "Z",
+    "desired_ue_forward": "+X",
+    "root_motion": false
+  },
+  "robots": [
+    {
+      "id": "vanguard",
+      "fbx": "vanguard.fbx",
+      "height_m": 2.148500084877014,
+      "armor_srgb": "BF7830",
+      "signal_srgb": "FFD270",
+      "stats": {
+        "vertices": 4864,
+        "triangles": 9432,
+        "material_slots": [
+          "Gunmetal",
+          "Armor",
+          "Brass",
+          "Rubber",
+          "Signal"
+        ],
+        "bone_count": 20,
+        "bounds_m": {
+          "x": [
+            -0.6145985126495361,
+            0.6145985126495361
+          ],
+          "y": [
+            -0.33250004053115845,
+            0.2749999761581421
+          ],
+          "z": [
+            -1.1920928955078125e-07,
+            2.1484999656677246
+          ]
+        },
+        "height_m": 2.148500084877014,
+        "uv_layers": 1,
+        "single_rigid_weight_per_vertex": true,
+        "unweighted_vertices": 0,
+        "object_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "negative_scale": false
+      }
+    },
+    {
+      "id": "bulwark",
+      "fbx": "bulwark.fbx",
+      "height_m": 2.148500084877014,
+      "armor_srgb": "356774",
+      "signal_srgb": "8AE6F0",
+      "stats": {
+        "vertices": 4864,
+        "triangles": 9432,
+        "material_slots": [
+          "Gunmetal",
+          "Armor",
+          "Brass",
+          "Rubber",
+          "Signal"
+        ],
+        "bone_count": 20,
+        "bounds_m": {
+          "x": [
+            -0.6145985126495361,
+            0.6145985126495361
+          ],
+          "y": [
+            -0.33250004053115845,
+            0.2749999761581421
+          ],
+          "z": [
+            -1.1920928955078125e-07,
+            2.1484999656677246
+          ]
+        },
+        "height_m": 2.148500084877014,
+        "uv_layers": 1,
+        "single_rigid_weight_per_vertex": true,
+        "unweighted_vertices": 0,
+        "object_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "negative_scale": false
+      }
+    }
+  ],
+  "bones": [
+    "root",
+    "pelvis",
+    "spine_01",
+    "chest",
+    "neck",
+    "head",
+    "clavicle_l",
+    "upperarm_l",
+    "lowerarm_l",
+    "hand_l",
+    "thigh_l",
+    "calf_l",
+    "foot_l",
+    "clavicle_r",
+    "upperarm_r",
+    "lowerarm_r",
+    "hand_r",
+    "thigh_r",
+    "calf_r",
+    "foot_r"
+  ],
+  "materials": [
+    "Gunmetal",
+    "Armor",
+    "Brass",
+    "Rubber",
+    "Signal"
+  ],
+  "sockets": [
+    {
+      "name": "Fist_L",
+      "bone": "hand_l",
+      "location_cm": [
+        0,
+        0,
+        0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "status": "provisional_origin_not_contact_center"
+    },
+    {
+      "name": "Fist_R",
+      "bone": "hand_r",
+      "location_cm": [
+        0,
+        0,
+        0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "status": "provisional_origin_not_contact_center"
+    }
+  ],
+  "animations": [
+    {
+      "name": "Idle",
+      "fbx": "animations/Idle.fbx",
+      "duration_s": 2.0,
+      "loop": true
+    },
+    {
+      "name": "Guard",
+      "fbx": "animations/Guard.fbx",
+      "duration_s": 1.0,
+      "loop": true
+    },
+    {
+      "name": "Straight_L",
+      "fbx": "animations/Straight_L.fbx",
+      "duration_s": 0.5,
+      "loop": false,
+      "active_window_s": [
+        0.16,
+        0.24
+      ]
+    },
+    {
+      "name": "Straight_R",
+      "fbx": "animations/Straight_R.fbx",
+      "duration_s": 0.5,
+      "loop": false,
+      "active_window_s": [
+        0.16,
+        0.24
+      ]
+    },
+    {
+      "name": "Dodge_L",
+      "fbx": "animations/Dodge_L.fbx",
+      "duration_s": 0.5,
+      "loop": false
+    },
+    {
+      "name": "Dodge_R",
+      "fbx": "animations/Dodge_R.fbx",
+      "duration_s": 0.5,
+      "loop": false
+    },
+    {
+      "name": "HitReact",
+      "fbx": "animations/HitReact.fbx",
+      "duration_s": 0.4,
+      "loop": false
+    },
+    {
+      "name": "KO",
+      "fbx": "animations/KO.fbx",
+      "duration_s": 1.0,
+      "loop": false
+    }
+  ],
+  "clips": [
+    "Idle",
+    "Guard",
+    "Straight_L",
+    "Straight_R",
+    "Dodge_L",
+    "Dodge_R",
+    "HitReact",
+    "KO"
+  ],
+  "limitations": [
+    "Unreal import and target-Windows FPS not verified",
+    "No live IK solver/runtime plugin in this package",
+    "KO clip is stylized bow, not ragdoll",
+    "No LOD meshes yet",
+    "Procedural Blender noise recreated approximately in Unreal materials"
+  ],
+  "files_sha256": {
+    "vanguard.fbx": "e43dc598814f72e23324704dba7ad6074de18029cab34dd35dd7970094b7ad57",
+    "bulwark.fbx": "fcb9803d36071db362e13d82f55e75e543a864f236f885260305b359f605abe7",
+    "animations/Dodge_L.fbx": "446b7f54f62e679a09de7621bf96c744722ee8f5b4ca8b6e2ff9afa13f596b78",
+    "animations/Straight_L.fbx": "83b14b5d9c444a050c34877bc2e810cc30801f31186866b12b92eec89c40b1bc",
+    "animations/Guard.fbx": "d9c0de06b76f0c4510bd6ddbe0abc889ee6f76bf5220b05db1ec7151e5a15db9",
+    "animations/Idle.fbx": "37b2a4a88d44423c0f5368f62ef72928ca6329822d40d47b47cbc12dc8680d83",
+    "animations/Straight_R.fbx": "5cb47f504d45877227047ee9ffbd1a1b236961c6db28d0e4522ef1367c3d8b05",
+    "animations/KO.fbx": "b79ade7a99197c503ff1dda009733c05c354455543012ed3d57d4f90d1e2bfcd",
+    "animations/HitReact.fbx": "6c18260791f3f61ae40ec865977062150b23466e7caf4ea7be0b8bba7435b286",
+    "animations/Dodge_R.fbx": "9f741cf3ec4fb488dee8a7eadf6f0fb0164dbfa65581825c6edc37efe47ae8e0"
+  }
+}

@@ -1,0 +1,269 @@
+{
+  "schema": "iron-echo-ui-layout/0.1",
+  "layouts": [
+    {
+      "file": "ArtSource/UI/Mockups/main-menu-375.svg",
+      "screen": "Главное меню",
+      "width": 375,
+      "height": 812,
+      "controls": [
+        {
+          "id": "configure_camera",
+          "x": 16,
+          "y": 344,
+          "width": 343,
+          "height": 56,
+          "primary": true,
+          "disabled": false,
+          "focused": true
+        },
+        {
+          "id": "start_match",
+          "x": 16,
+          "y": 416,
+          "width": 343,
+          "height": 56,
+          "primary": false,
+          "disabled": true,
+          "focused": false
+        },
+        {
+          "id": "settings",
+          "x": 16,
+          "y": 488,
+          "width": 343,
+          "height": 56,
+          "primary": false,
+          "disabled": false,
+          "focused": false
+        },
+        {
+          "id": "quit",
+          "x": 16,
+          "y": 560,
+          "width": 343,
+          "height": 56,
+          "primary": false,
+          "disabled": false,
+          "focused": false
+        }
+      ],
+      "artifactType": "SVG layout mockup; not an Unreal screenshot"
+    },
+    {
+      "file": "ArtSource/UI/Mockups/main-menu-768.svg",
+      "screen": "Главное меню",
+      "width": 768,
+      "height": 1024,
+      "controls": [
+        {
+          "id": "configure_camera",
+          "x": 48,
+          "y": 344,
+          "width": 440,
+          "height": 56,
+          "primary": true,
+          "disabled": false,
+          "focused": true
+        },
+        {
+          "id": "start_match",
+          "x": 48,
+          "y": 416,
+          "width": 440,
+          "height": 56,
+          "primary": false,
+          "disabled": true,
+          "focused": false
+        },
+        {
+          "id": "settings",
+          "x": 48,
+          "y": 488,
+          "width": 440,
+          "height": 56,
+          "primary": false,
+          "disabled": false,
+          "focused": false
+        },
+        {
+          "id": "quit",
+          "x": 48,
+          "y": 560,
+          "width": 440,
+          "height": 56,
+          "primary": false,
+          "disabled": false,
+          "focused": false
+        }
+      ],
+      "artifactType": "SVG layout mockup; not an Unreal screenshot"
+    },
+    {
+      "file": "ArtSource/UI/Mockups/main-menu-1024.svg",
+      "screen": "Главное меню",
+      "width": 1024,
+      "height": 768,
+      "controls": [
+        {
+          "id": "configure_camera",
+          "x": 48,
+          "y": 344,
+          "width": 440,
+          "height": 56,
+          "primary": true,
+          "disabled": false,
+          "focused": true
+        },
+        {
+          "id": "start_match",
+          "x": 48,
+          "y": 416,
+          "width": 440,
+          "height": 56,
+          "primary": false,
+          "disabled": true,
+          "focused": false
+        },
+        {
+          "id": "settings",
+          "x": 48,
+          "y": 488,
+          "width": 440,
+          "height": 56,
+          "primary": false,
+          "disabled": false,
+          "focused": false
+        },
+        {
+          "id": "quit",
+          "x": 48,
+          "y": 560,
+          "width": 440,
+          "height": 56,
+          "primary": false,
+          "disabled": false,
+          "focused": false
+        }
+      ],
+      "artifactType": "SVG layout mockup; not an Unreal screenshot"
+    },
+    {
+      "file": "ArtSource/UI/Mockups/main-menu-1440.svg",
+      "screen": "Главное меню",
+      "width": 1440,
+      "height": 900,
+      "controls": [
+        {
+          "id": "configure_camera",
+          "x": 64,
+          "y": 344,
+          "width": 440,
+          "height": 56,
+          "primary": true,
+          "disabled": false,
+          "focused": true
+        },
+        {
+          "id": "start_match",
+          "x": 64,
+          "y": 416,
+          "width": 440,
+          "height": 56,
+          "primary": false,
+          "disabled": true,
+          "focused": false
+        },
+        {
+          "id": "settings",
+          "x": 64,
+          "y": 488,
+          "width": 440,
+          "height": 56,
+          "primary": false,
+          "disabled": false,
+          "focused": false
+        },
+        {
+          "id": "quit",
+          "x": 64,
+          "y": 560,
+          "width": 440,
+          "height": 56,
+          "primary": false,
+          "disabled": false,
+          "focused": false
+        }
+      ],
+      "artifactType": "SVG layout mockup; not an Unreal screenshot"
+    },
+    {
+      "file": "ArtSource/UI/Mockups/calibration-1440.svg",
+      "screen": "Калибровка — шаг выбора камеры",
+      "width": 1440,
+      "height": 900,
+      "controls": [
+        {
+          "id": "camera_device",
+          "x": 64,
+          "y": 730,
+          "width": 390,
+          "height": 56,
+          "primary": false,
+          "disabled": false,
+          "focused": false
+        },
+        {
+          "id": "preview_toggle",
+          "x": 480,
+          "y": 730,
+          "width": 340,
+          "height": 56,
+          "primary": false,
+          "disabled": false,
+          "focused": false
+        },
+        {
+          "id": "begin_calibration",
+          "x": 920,
+          "y": 632,
+          "width": 440,
+          "height": 56,
+          "primary": true,
+          "disabled": true,
+          "focused": false
+        },
+        {
+          "id": "back",
+          "x": 64,
+          "y": 820,
+          "width": 190,
+          "height": 56,
+          "primary": false,
+          "disabled": false,
+          "focused": false
+        }
+      ],
+      "artifactType": "SVG layout mockup; not an Unreal screenshot"
+    },
+    {
+      "file": "ArtSource/UI/Mockups/hud-1440.svg",
+      "screen": "HUD боя",
+      "width": 1440,
+      "height": 900,
+      "controls": [
+        {
+          "id": "pause",
+          "x": 24,
+          "y": 820,
+          "width": 180,
+          "height": 56,
+          "primary": false,
+          "disabled": false,
+          "focused": false
+        }
+      ],
+      "artifactType": "SVG layout mockup; not an Unreal screenshot"
+    }
+  ]
+}

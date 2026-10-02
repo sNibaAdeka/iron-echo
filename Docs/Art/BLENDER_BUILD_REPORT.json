@@ -1,0 +1,88 @@
+{
+  "blender_version": "4.5.7 LTS",
+  "robots": {
+    "vanguard": {
+      "vertices": 4864,
+      "triangles": 9432,
+      "material_slots": [
+        "Gunmetal",
+        "Armor",
+        "Brass",
+        "Rubber",
+        "Signal"
+      ],
+      "bone_count": 20,
+      "bounds_m": {
+        "x": [
+          -0.6145985126495361,
+          0.6145985126495361
+        ],
+        "y": [
+          -0.33250004053115845,
+          0.2749999761581421
+        ],
+        "z": [
+          -1.1920928955078125e-07,
+          2.1484999656677246
+        ]
+      },
+      "height_m": 2.148500084877014,
+      "uv_layers": 1,
+      "single_rigid_weight_per_vertex": true,
+      "unweighted_vertices": 0,
+      "object_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "negative_scale": false
+    },
+    "bulwark": {
+      "vertices": 4864,
+      "triangles": 9432,
+      "material_slots": [
+        "Gunmetal",
+        "Armor",
+        "Brass",
+        "Rubber",
+        "Signal"
+      ],
+      "bone_count": 20,
+      "bounds_m": {
+        "x": [
+          -0.6145985126495361,
+          0.6145985126495361
+        ],
+        "y": [
+          -0.33250004053115845,
+          0.2749999761581421
+        ],
+        "z": [
+          -1.1920928955078125e-07,
+          2.1484999656677246
+        ]
+      },
+      "height_m": 2.148500084877014,
+      "uv_layers": 1,
+      "single_rigid_weight_per_vertex": true,
+      "unweighted_vertices": 0,
+      "object_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "negative_scale": false
+    }
+  },
+  "animations_exported": [
+    "Idle",
+    "Guard",
+    "Straight_L",
+    "Straight_R",
+    "Dodge_L",
+    "Dodge_R",
+    "HitReact",
+    "KO"
+  ],
+  "unreal_verified": false
+}

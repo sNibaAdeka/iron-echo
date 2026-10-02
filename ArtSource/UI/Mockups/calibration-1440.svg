@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900" role="img" aria-labelledby="title desc">
+<title id="title">IRON ECHO — Калибровка — шаг выбора камеры — макет</title>
+<desc id="desc">Двумерный макет интерфейса. Не скриншот Unreal Engine. Все показанные игровые значения — примеры.</desc>
+<rect x="0" y="0" width="1440" height="900" rx="0" fill="#11151B"/>
+<text x="64" y="34" fill="#B7C0CB" font-family="DejaVu Sans, Arial, sans-serif" font-size="16" font-weight="400" text-anchor="start">МАКЕТ • НЕ КАДР UNREAL</text>
+<text x="64" y="116" fill="#F3F0E8" font-family="DejaVu Sans, Arial, sans-serif" font-size="42" font-weight="700" text-anchor="start">Настройка управления</text>
+<text x="64" y="162" fill="#E9B15A" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" font-weight="600" text-anchor="start">ШАГ 1 / 3  •  ВЫБОР КАМЕРЫ</text>
+<rect x="64" y="206" width="820" height="462" rx="4" fill="#1A2028" stroke="#91A0B0" stroke-width="1"/>
+<g transform="translate(440 300) scale(2.6666666666666665)" fill="none" stroke="#B7C0CB" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="15" rx="2"/><path d="M7 6l2-3h6l2 3"/><circle cx="12" cy="13" r="4"/></g>
+<text x="474" y="402" fill="#F3F0E8" font-family="DejaVu Sans, Arial, sans-serif" font-size="22" font-weight="600" text-anchor="middle">Здесь будет локальный предпросмотр</text>
+<text x="474" y="437" fill="#B7C0CB" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" font-weight="400" text-anchor="middle">Макет не открывает камеру</text>
+<text x="920" y="236" fill="#F3F0E8" font-family="DejaVu Sans, Arial, sans-serif" font-size="24" font-weight="700" text-anchor="start">Перед началом</text>
+<text x="920" y="284" fill="#B7C0CB" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" font-weight="400" text-anchor="start">Встаньте на расстоянии,</text>
+<text x="920" y="313" fill="#B7C0CB" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" font-weight="400" text-anchor="start">при котором видны голова,</text>
+<text x="920" y="342" fill="#B7C0CB" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" font-weight="400" text-anchor="start">кисти и таз.</text>
+<text x="920" y="371" fill="#B7C0CB" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" font-weight="400" text-anchor="start"></text>
+<text x="920" y="400" fill="#B7C0CB" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" font-weight="400" text-anchor="start">Свет должен падать на вас.</text>
+<text x="920" y="429" fill="#B7C0CB" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" font-weight="400" text-anchor="start">Освободите место для рук.</text>
+<text x="64" y="714" fill="#F3F0E8" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" font-weight="600" text-anchor="start">Камера</text>
+<rect x="64" y="730" width="390" height="56" rx="4" fill="#1A2028" stroke="#91A0B0" stroke-width="1"/>
+<g transform="translate(82 746) scale(1.0)" fill="none" stroke="#F3F0E8" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="15" rx="2"/><path d="M7 6l2-3h6l2 3"/><circle cx="12" cy="13" r="4"/></g>
+<text x="120" y="765" fill="#F3F0E8" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" font-weight="600" text-anchor="start">Выберите камеру</text>
+<rect x="480" y="730" width="340" height="56" rx="4" fill="#1A2028" stroke="#91A0B0" stroke-width="1"/>
+<text x="500" y="765" fill="#F3F0E8" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" font-weight="600" text-anchor="start">Скрыть предпросмотр</text>
+<text x="920" y="520" fill="#90CBA9" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" font-weight="400" text-anchor="start">Обработка на этом компьютере.</text>
+<text x="920" y="549" fill="#90CBA9" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" font-weight="400" text-anchor="start">Запись выключена.</text>
+<text x="920" y="602" fill="#E9B15A" font-family="DejaVu Sans, Arial, sans-serif" font-size="16" font-weight="400" text-anchor="start">Сначала выберите камеру.</text>
+<rect x="920" y="632" width="440" height="56" rx="4" fill="#252D38"/>
+<g transform="translate(938 648) scale(1.0)" fill="none" stroke="#9BA6B5" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 4v6c0 5-4 8-8 10-4-2-8-5-8-10V6z"/><path d="M8 12l3 3 5-6"/></g>
+<text x="976" y="667" fill="#9BA6B5" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" font-weight="600" text-anchor="start">Начать калибровку</text>
+<rect x="64" y="820" width="190" height="56" rx="4" fill="#1A2028" stroke="#91A0B0" stroke-width="1"/>
+<g transform="translate(82 836) scale(1.0)" fill="none" stroke="#F3F0E8" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12H3M10 5l-7 7 7 7"/></g>
+<text x="120" y="855" fill="#F3F0E8" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" font-weight="600" text-anchor="start">Назад</text>
+</svg>

@@ -1,0 +1,40 @@
+# Python / local environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# Machine paths and credentials
+.env
+.env.*
+!.env.example
+*.local.json
+local.tools.json
+
+# Unreal generated content; retain authored art assets
+Game/Binaries/
+Game/Intermediate/
+Game/Saved/
+Game/DerivedDataCache/
+Game/.vs/
+Game/*.sln
+Game/*.suo
+Game/Plugins/*/Binaries/
+Game/Plugins/*/Intermediate/
+DerivedDataCache/
+
+# Task scratch, downloaded runtimes, packaged builds and camera recordings
+work/
+Builds/
+Recordings/
+Tracking/Recordings/
+*.log
+*.crash
+*.blend1
+*.blend2
+*.dmg
+.DS_Store
+Thumbs.db
+
+# Keep source .blend/.fbx/.svg and authored .uasset/.umap in Git.

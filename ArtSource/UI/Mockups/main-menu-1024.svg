@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="768" viewBox="0 0 1024 768" role="img" aria-labelledby="title desc">
+<title id="title">IRON ECHO — Главное меню — макет</title>
+<desc id="desc">Двумерный макет интерфейса. Не скриншот Unreal Engine. Все показанные игровые значения — примеры.</desc>
+<rect x="0" y="0" width="1024" height="768" rx="0" fill="#11151B"/>
+<text x="48" y="32" fill="#B7C0CB" font-family="DejaVu Sans, Arial, sans-serif" font-size="16" font-weight="400" text-anchor="start">МАКЕТ • НЕ КАДР UNREAL</text>
+<text x="48" y="122" fill="#F3F0E8" font-family="DejaVu Sans, Arial, sans-serif" font-size="64" font-weight="700" text-anchor="start">IRON ECHO</text>
+<text x="48" y="170" fill="#E9B15A" font-family="DejaVu Sans, Arial, sans-serif" font-size="20" font-weight="600" text-anchor="start">ТВОИ ДВИЖЕНИЯ. ЕГО УДАРЫ.</text>
+<text x="48" y="240" fill="#F3F0E8" font-family="DejaVu Sans, Arial, sans-serif" font-size="20" font-weight="400" text-anchor="start">Один ринг. Два робота.</text>
+<text x="48" y="270" fill="#B7C0CB" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" font-weight="400" text-anchor="start">Управляй стойкой, уклонами и ударами.</text>
+<text x="48" y="316" fill="#E9B15A" font-family="DejaVu Sans, Arial, sans-serif" font-size="16" font-weight="400" text-anchor="start">Пример: камера ещё не выбрана</text>
+<rect x="48" y="344" width="440" height="56" rx="4" fill="#E9B15A"/>
+<rect x="43" y="339" width="450" height="66" rx="6" fill="#11151B" stroke="#E9B15A" stroke-width="3"/>
+<rect x="48" y="344" width="440" height="56" rx="4" fill="#E9B15A"/>
+<g transform="translate(66 360) scale(1.0)" fill="none" stroke="#11151B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="15" rx="2"/><path d="M7 6l2-3h6l2 3"/><circle cx="12" cy="13" r="4"/></g>
+<text x="104" y="379" fill="#11151B" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" font-weight="600" text-anchor="start">Настроить камеру</text>
+<rect x="48" y="416" width="440" height="56" rx="4" fill="#252D38" stroke="#91A0B0" stroke-width="1"/>
+<g transform="translate(66 432) scale(1.0)" fill="none" stroke="#9BA6B5" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3l14 9-14 9z"/></g>
+<text x="104" y="451" fill="#9BA6B5" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" font-weight="600" text-anchor="start">Начать бой</text>
+<rect x="48" y="488" width="440" height="56" rx="4" fill="#1A2028" stroke="#91A0B0" stroke-width="1"/>
+<g transform="translate(66 504) scale(1.0)" fill="none" stroke="#F3F0E8" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 3v18M12 3v18M20 3v18"/><path d="M1 7h6M9 16h6M17 10h6"/></g>
+<text x="104" y="523" fill="#F3F0E8" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" font-weight="600" text-anchor="start">Настройки</text>
+<rect x="48" y="560" width="440" height="56" rx="4" fill="#1A2028" stroke="#91A0B0" stroke-width="1"/>
+<g transform="translate(66 576) scale(1.0)" fill="none" stroke="#F3F0E8" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10 3H3v18h7M9 12h13M17 7l5 5-5 5"/></g>
+<text x="104" y="595" fill="#F3F0E8" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" font-weight="600" text-anchor="start">Выход</text>
+<text x="48" y="656" fill="#B7C0CB" font-family="DejaVu Sans, Arial, sans-serif" font-size="16" font-weight="400" text-anchor="start">Нужна камера и место для движения рук.</text>
+<text x="48" y="685" fill="#B7C0CB" font-family="DejaVu Sans, Arial, sans-serif" font-size="16" font-weight="400" text-anchor="start">Данные камеры обрабатываются локально.</text>
+<rect x="548" y="176" width="428" height="492" rx="0" fill="#1A2028"/>
+<text x="572" y="210" fill="#B7C0CB" font-family="DejaVu Sans, Arial, sans-serif" font-size="16" font-weight="400" text-anchor="start">ЗОНА ФОНОВОЙ СЦЕНЫ</text>
+<path d="M576 517.12L948 517.12" fill="none" stroke="#E9B15A" stroke-width="2"/>
+<path d="M576 481.12L948 481.12" fill="none" stroke="#91A0B0" stroke-width="1"/>
+<path d="M576 409.12L576 575.12" fill="none" stroke="#91A0B0" stroke-width="4"/>
+<path d="M948 409.12L948 575.12" fill="none" stroke="#91A0B0" stroke-width="4"/>
+<text x="762.0" y="421.12" fill="#F3F0E8" font-family="DejaVu Sans, Arial, sans-serif" font-size="22" font-weight="600" text-anchor="middle">Графика из Unreal</text>
+<text x="762.0" y="453.12" fill="#B7C0CB" font-family="DejaVu Sans, Arial, sans-serif" font-size="16" font-weight="400" text-anchor="middle">подключается после импорта</text>
+</svg>

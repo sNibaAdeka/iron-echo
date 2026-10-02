@@ -1,0 +1,247 @@
+{
+  "schema": "iron-echo-ui-source-check/0.1",
+  "scope": "Offline tokens, SVG XML and control rectangles only",
+  "runtimeVerified": false,
+  "contrast": [
+    {
+      "label": "Body / background",
+      "fg": "text",
+      "bg": "background",
+      "minimum": 4.5,
+      "ratio": 16.078,
+      "passed": true
+    },
+    {
+      "label": "Body / surface",
+      "fg": "text",
+      "bg": "surface",
+      "minimum": 4.5,
+      "ratio": 14.393,
+      "passed": true
+    },
+    {
+      "label": "Body / raised",
+      "fg": "text",
+      "bg": "surfaceRaised",
+      "minimum": 4.5,
+      "ratio": 12.203,
+      "passed": true
+    },
+    {
+      "label": "Secondary / background",
+      "fg": "textMuted",
+      "bg": "background",
+      "minimum": 4.5,
+      "ratio": 9.953,
+      "passed": true
+    },
+    {
+      "label": "Secondary / surface",
+      "fg": "textMuted",
+      "bg": "surface",
+      "minimum": 4.5,
+      "ratio": 8.91,
+      "passed": true
+    },
+    {
+      "label": "Secondary / raised",
+      "fg": "textMuted",
+      "bg": "surfaceRaised",
+      "minimum": 4.5,
+      "ratio": 7.554,
+      "passed": true
+    },
+    {
+      "label": "Primary label",
+      "fg": "onPrimary",
+      "bg": "primary",
+      "minimum": 4.5,
+      "ratio": 9.505,
+      "passed": true
+    },
+    {
+      "label": "Disabled label",
+      "fg": "disabledText",
+      "bg": "disabledSurface",
+      "minimum": 4.5,
+      "ratio": 5.635,
+      "passed": true
+    },
+    {
+      "label": "Accent label",
+      "fg": "accent",
+      "bg": "surface",
+      "minimum": 4.5,
+      "ratio": 8.831,
+      "passed": true
+    },
+    {
+      "label": "Success label",
+      "fg": "success",
+      "bg": "surface",
+      "minimum": 4.5,
+      "ratio": 8.821,
+      "passed": true
+    },
+    {
+      "label": "Warning label",
+      "fg": "warning",
+      "bg": "surface",
+      "minimum": 4.5,
+      "ratio": 8.509,
+      "passed": true
+    },
+    {
+      "label": "Error label",
+      "fg": "error",
+      "bg": "surface",
+      "minimum": 4.5,
+      "ratio": 8.13,
+      "passed": true
+    },
+    {
+      "label": "Focus outline / raised",
+      "fg": "focus",
+      "bg": "surfaceRaised",
+      "minimum": 3.0,
+      "ratio": 7.214,
+      "passed": true
+    },
+    {
+      "label": "Control boundary / surface",
+      "fg": "outline",
+      "bg": "surface",
+      "minimum": 3.0,
+      "ratio": 6.134,
+      "passed": true
+    },
+    {
+      "label": "Player health / raised",
+      "fg": "healthPlayer",
+      "bg": "surfaceRaised",
+      "minimum": 3.0,
+      "ratio": 7.214,
+      "passed": true
+    },
+    {
+      "label": "Opponent health / raised",
+      "fg": "healthOpponent",
+      "bg": "surfaceRaised",
+      "minimum": 3.0,
+      "ratio": 7.487,
+      "passed": true
+    },
+    {
+      "label": "Stamina / raised",
+      "fg": "stamina",
+      "bg": "surfaceRaised",
+      "minimum": 3.0,
+      "ratio": 7.479,
+      "passed": true
+    }
+  ],
+  "layouts": [
+    {
+      "file": "ArtSource/UI/Mockups/main-menu-375.svg",
+      "viewport": [
+        375,
+        812
+      ],
+      "controls": 4,
+      "passed": true
+    },
+    {
+      "file": "ArtSource/UI/Mockups/main-menu-768.svg",
+      "viewport": [
+        768,
+        1024
+      ],
+      "controls": 4,
+      "passed": true
+    },
+    {
+      "file": "ArtSource/UI/Mockups/main-menu-1024.svg",
+      "viewport": [
+        1024,
+        768
+      ],
+      "controls": 4,
+      "passed": true
+    },
+    {
+      "file": "ArtSource/UI/Mockups/main-menu-1440.svg",
+      "viewport": [
+        1440,
+        900
+      ],
+      "controls": 4,
+      "passed": true
+    },
+    {
+      "file": "ArtSource/UI/Mockups/calibration-1440.svg",
+      "viewport": [
+        1440,
+        900
+      ],
+      "controls": 4,
+      "passed": true
+    },
+    {
+      "file": "ArtSource/UI/Mockups/hud-1440.svg",
+      "viewport": [
+        1440,
+        900
+      ],
+      "controls": 1,
+      "passed": true
+    }
+  ],
+  "icons": [
+    {
+      "file": "ArtSource/UI/Icons/back.svg",
+      "passed": true
+    },
+    {
+      "file": "ArtSource/UI/Icons/camera.svg",
+      "passed": true
+    },
+    {
+      "file": "ArtSource/UI/Icons/check.svg",
+      "passed": true
+    },
+    {
+      "file": "ArtSource/UI/Icons/exit.svg",
+      "passed": true
+    },
+    {
+      "file": "ArtSource/UI/Icons/guard.svg",
+      "passed": true
+    },
+    {
+      "file": "ArtSource/UI/Icons/pause.svg",
+      "passed": true
+    },
+    {
+      "file": "ArtSource/UI/Icons/play.svg",
+      "passed": true
+    },
+    {
+      "file": "ArtSource/UI/Icons/settings.svg",
+      "passed": true
+    },
+    {
+      "file": "ArtSource/UI/Icons/warning.svg",
+      "passed": true
+    }
+  ],
+  "failures": [],
+  "motion": {
+    "exitEnterRatio": 0.4,
+    "reducedMotionConfig": {
+      "translate": 0,
+      "scale": 1,
+      "duration": 0
+    },
+    "passed": true
+  }
+}
