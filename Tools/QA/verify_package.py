@@ -31,7 +31,16 @@ def main():
     for name in ('AGENTS.md','CLAUDE.md','PROJECT_STATE.md','WINDOWS_START.md'):
         if not (root/name).is_file():
             raise RuntimeError('Continuation document missing: '+name)
+    plugin = root/'IntegrationDraft/IronEchoVisuals'
+    descriptor = json.loads((plugin/'IronEchoVisuals.uplugin').read_text(encoding='utf-8'))
+    for module in descriptor['Modules']:
+        name = module['Name']
+        if not (plugin/'Source'/name/(name+'.Build.cs')).is_file():
+            raise RuntimeError('Declared plugin module rules missing: '+name)
+    if not (plugin/'Source/IronEchoVisuals/Public/IETheme.h').is_file():
+        raise RuntimeError('Generated native theme missing')
     print('PASS: {} Python files parsed; {} FBX hashes verified; continuation documents present'.format(len(scripts),len(hashes)))
+    print('PASS: plugin JSON and declared module files present; C++ compilation NOT performed')
     print('Scope: source package integrity only. Unreal/Windows runtime remains unverified.')
 
 

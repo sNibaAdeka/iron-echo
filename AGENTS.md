@@ -8,7 +8,7 @@
 - Claude Opus 5.5: .uproject, Config, технические C++-модули, Tracking/MediaPipe, игровые правила, бот, интеграция, упаковка и будущий онлайн.
 - Пользователь: автор, владелец аккаунтов и испытатель движения перед камерой. Не поручай ему обычное написание кода.
 
-Codex владеет ArtSource, Tools/Blender, Tools/Unreal/Art, Tools/UI, Docs/Art, Docs/Handoffs/Codex и будущим Game/Content/Art. Opus владеет будущим Game/IronEcho.uproject, Game/Config, Game/Source, Game/Content/Gameplay, Tracking и Tools/Build. Общий контракт меняется одним автором после согласования новой версии.
+Codex владеет ArtSource, Tools/Blender, Tools/Unreal/Art, Tools/UI, Docs/Art, Docs/Handoffs/Codex, IntegrationDraft/IronEchoVisuals и будущим Game/Content/Art. Opus владеет будущим Game/IronEcho.uproject, Game/Config, Game/Source, Game/Content/Gameplay, Tracking и Tools/Build. Общий контракт меняется одним автором после согласования новой версии. Черновик плагина переносится в Game/Plugins после согласования интегратором; до этого он не зарегистрирован в проекте.
 
 Не отменяй изменения другого исполнителя. Не открывай два редактора на одну рабочую копию. .blend/.uasset/.umap имеют одного владельца на запись; их нельзя автоматически сливать как обычный текст. Данные с камеры и секреты не включать в Git.
 

@@ -1,0 +1,27 @@
+{
+  "package": "IronEchoVisuals-0.2-draft",
+  "date": "2026-10-02",
+  "preparation_platform": "macOS arm64",
+  "scope": "Prepared sources and source consistency; not Unreal compilation or runtime QA",
+  "checks": {
+    "python_syntax_files": {"passed": 13, "total": 13},
+    "fbx_checksums": {"passed": 10, "total": 10},
+    "ui_source_contrast_pairs": {"passed": 17, "total": 17},
+    "ui_svg_layouts": {"passed": 6, "total": 6},
+    "ui_svg_icons": {"passed": 9, "total": 9},
+    "generated_cpp_theme_matches_json": true,
+    "plugin_descriptor_and_declared_rules_present": true,
+    "cpp_local_includes_and_generated_include_order": {"passed": 12, "total": 12}
+  },
+  "unverified": [
+    "Unreal Header Tool and C++ compilation",
+    "FBX import in Unreal",
+    "UMG layout, actual DPI and keyboard/gamepad focus",
+    "Runtime camera composition and obstacle avoidance",
+    "Runtime VFX behavior and material compilation/cooking",
+    "Gameplay command/data/contact adapter acceptance",
+    "Windows packaged build",
+    "RTX 3050 FPS and VRAM measurements"
+  ],
+  "blocking_environment": "Unreal is not installed on the preparation Mac; the Windows PC is not connected to this session"
+}

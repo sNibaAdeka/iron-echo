@@ -1,0 +1,12 @@
+{
+  "FileVersion": 3,
+  "Version": 1,
+  "VersionName": "0.2-draft",
+  "FriendlyName": "IRON ECHO Visuals",
+  "Description": "Draft presentation layer: UMG, camera and cosmetic confirmed impacts. No combat authority.",
+  "Category": "IRON ECHO",
+  "CreatedBy": "IRON ECHO / Codex",
+  "CanContainContent": false,
+  "EnabledByDefault": false,
+  "Modules": [{"Name": "IronEchoVisuals", "Type": "Runtime", "LoadingPhase": "Default"}]
+}

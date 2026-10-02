@@ -1,6 +1,8 @@
 # Передача визуального UI фундамента Opus
 
 Пакет `codex-ui-0.1`, 2026-10-02. Состояние: prepared source, offline checks passed; runtime UMG unverified.
+
+Дополнение 0.2-draft: native menu/HUD подготовлены в IntegrationDraft/IronEchoVisuals. Новая передача и границы проверки — runtime-visuals.md. Ни этот исходный отчёт, ни новая передача не подтверждают запуск UMG в UE.
 Автор источников UI: Codex. Принятый контракт Opus отсутствует; версии `iron-echo-ui-* /0.1` — локальные схемы арт-источников, не контракт gameplay.
 
 ## Файлы
