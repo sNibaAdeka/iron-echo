@@ -1,0 +1,189 @@
+{
+  "schema": "iron-echo-arena-source/0.1",
+  "generator": "Tools/Blender/build_arena_review.py",
+  "blender_version": "4.5.7 LTS",
+  "fbx": "industrial_arena.fbx",
+  "sha256": "e9027e5367537992e9c4844e64162a9820961615f0ff71e342e314351757fb48",
+  "blend": "ArtSource/Blender/Arena/industrial_arena.blend",
+  "blend_sha256": "441a37de66fbcda9d39c560c6cd4c068150337dcbca55da9d2ff981a5e87445b",
+  "triangles": 4180,
+  "vertices": 2280,
+  "uv_layers": 1,
+  "material_names": [
+    "Arena_Concrete",
+    "Arena_Steel",
+    "Arena_Deck",
+    "Arena_Trim",
+    "Arena_Rubber",
+    "Arena_Wall",
+    "Arena_Lamp",
+    "Arena_ColdLamp"
+  ],
+  "dimensions_m": [
+    12.0,
+    12.0,
+    5.110000133514404
+  ],
+  "material_specs": {
+    "Arena_Steel": {
+      "color_srgb": [
+        0.18823529411764706,
+        0.23921568627450981,
+        0.2823529411764706
+      ],
+      "metallic": 0.88,
+      "roughness": 0.42,
+      "glow": 0
+    },
+    "Arena_Concrete": {
+      "color_srgb": [
+        0.20392156862745098,
+        0.23529411764705882,
+        0.26666666666666666
+      ],
+      "metallic": 0.05,
+      "roughness": 0.84,
+      "glow": 0
+    },
+    "Arena_Deck": {
+      "color_srgb": [
+        0.09411764705882353,
+        0.13725490196078433,
+        0.1843137254901961
+      ],
+      "metallic": 0.2,
+      "roughness": 0.57,
+      "glow": 0
+    },
+    "Arena_Trim": {
+      "color_srgb": [
+        0.6901960784313725,
+        0.4823529411764706,
+        0.2196078431372549
+      ],
+      "metallic": 0.1,
+      "roughness": 0.55,
+      "glow": 0
+    },
+    "Arena_Rubber": {
+      "color_srgb": [
+        0.06274509803921569,
+        0.09411764705882353,
+        0.12549019607843137
+      ],
+      "metallic": 0,
+      "roughness": 0.84,
+      "glow": 0
+    },
+    "Arena_Wall": {
+      "color_srgb": [
+        0.13333333333333333,
+        0.17254901960784313,
+        0.20784313725490197
+      ],
+      "metallic": 0.15,
+      "roughness": 0.7,
+      "glow": 0
+    },
+    "Arena_Lamp": {
+      "color_srgb": [
+        0.9490196078431372,
+        0.7647058823529411,
+        0.4823529411764706
+      ],
+      "metallic": 0,
+      "roughness": 0.5,
+      "glow": 2
+    },
+    "Arena_ColdLamp": {
+      "color_srgb": [
+        0.45098039215686275,
+        0.7294117647058823,
+        0.788235294117647
+      ],
+      "metallic": 0,
+      "roughness": 0.5,
+      "glow": 2
+    }
+  },
+  "robot_source_sha256": {
+    "vanguard.fbx": "e43dc598814f72e23324704dba7ad6074de18029cab34dd35dd7970094b7ad57",
+    "bulwark.fbx": "fcb9803d36071db362e13d82f55e75e543a864f236f885260305b359f605abe7",
+    "animations/Dodge_L.fbx": "446b7f54f62e679a09de7621bf96c744722ee8f5b4ca8b6e2ff9afa13f596b78",
+    "animations/Straight_L.fbx": "83b14b5d9c444a050c34877bc2e810cc30801f31186866b12b92eec89c40b1bc",
+    "animations/Guard.fbx": "d9c0de06b76f0c4510bd6ddbe0abc889ee6f76bf5220b05db1ec7151e5a15db9",
+    "animations/Idle.fbx": "37b2a4a88d44423c0f5368f62ef72928ca6329822d40d47b47cbc12dc8680d83",
+    "animations/Straight_R.fbx": "5cb47f504d45877227047ee9ffbd1a1b236961c6db28d0e4522ef1367c3d8b05",
+    "animations/KO.fbx": "b79ade7a99197c503ff1dda009733c05c354455543012ed3d57d4f90d1e2bfcd",
+    "animations/HitReact.fbx": "6c18260791f3f61ae40ec865977062150b23466e7caf4ea7be0b8bba7435b286",
+    "animations/Dodge_R.fbx": "9f741cf3ec4fb488dee8a7eadf6f0fb0164dbfa65581825c6edc37efe47ae8e0"
+  },
+  "export_space": {
+    "units": "meters",
+    "axis_forward": "-Y",
+    "axis_up": "Z",
+    "desired_ue_forward": "+X"
+  },
+  "camera_preview": {
+    "location_m": [
+      -3.5,
+      -1.4,
+      2.8
+    ],
+    "target_m": [
+      1,
+      0,
+      1.55
+    ],
+    "lens_mm": 23.5,
+    "sensor_width_mm": 36
+  },
+  "overview_camera": {
+    "location_m": [
+      -4.3,
+      -4.3,
+      3.5
+    ],
+    "target_m": [
+      0,
+      0,
+      1.05
+    ],
+    "lens_mm": 24,
+    "sensor_width_mm": 36
+  },
+  "preview_files": [
+    "Previews/arena-shoulder.png",
+    "Previews/arena-straight-left.png",
+    "Previews/arena-overview.png"
+  ],
+  "fighters_blender_space": [
+    {
+      "id": "vanguard",
+      "location_m": [
+        -1,
+        0,
+        0
+      ],
+      "yaw_degrees": 90
+    },
+    {
+      "id": "bulwark",
+      "location_m": [
+        1,
+        0,
+        0
+      ],
+      "yaw_degrees": -90
+    }
+  ],
+  "unreal_verified": false,
+  "scope": "One static art mesh, original materials and offline lighting/camera previews",
+  "limitations": [
+    "No gameplay/collision authored",
+    "Room joined for art preview: not a final modular streaming setup",
+    "Cycles light cost is not UE light cost",
+    "Camera framing requires actual robot movement/occlusion checks",
+    "Blender noise is not automatically transferred to Unreal"
+  ]
+}

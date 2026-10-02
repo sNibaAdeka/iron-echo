@@ -1,0 +1,2944 @@
+{
+  "scope": "Blender actual FBX round trip and sparse vertex-ray camera diagnostics; not UE gameplay",
+  "blender_version": "4.5.7 LTS",
+  "checks": [
+    {
+      "name": "fbx_checksum",
+      "passed": true,
+      "evidence": "industrial_arena.fbx"
+    },
+    {
+      "name": "blend_checksum",
+      "passed": true,
+      "evidence": "ArtSource/Blender/Arena/industrial_arena.blend"
+    },
+    {
+      "name": "robot_unchanged_vanguard.fbx",
+      "passed": true,
+      "evidence": "vanguard.fbx"
+    },
+    {
+      "name": "robot_unchanged_bulwark.fbx",
+      "passed": true,
+      "evidence": "bulwark.fbx"
+    },
+    {
+      "name": "robot_unchanged_animations/Dodge_L.fbx",
+      "passed": true,
+      "evidence": "animations/Dodge_L.fbx"
+    },
+    {
+      "name": "robot_unchanged_animations/Straight_L.fbx",
+      "passed": true,
+      "evidence": "animations/Straight_L.fbx"
+    },
+    {
+      "name": "robot_unchanged_animations/Guard.fbx",
+      "passed": true,
+      "evidence": "animations/Guard.fbx"
+    },
+    {
+      "name": "robot_unchanged_animations/Idle.fbx",
+      "passed": true,
+      "evidence": "animations/Idle.fbx"
+    },
+    {
+      "name": "robot_unchanged_animations/Straight_R.fbx",
+      "passed": true,
+      "evidence": "animations/Straight_R.fbx"
+    },
+    {
+      "name": "robot_unchanged_animations/KO.fbx",
+      "passed": true,
+      "evidence": "animations/KO.fbx"
+    },
+    {
+      "name": "robot_unchanged_animations/HitReact.fbx",
+      "passed": true,
+      "evidence": "animations/HitReact.fbx"
+    },
+    {
+      "name": "robot_unchanged_animations/Dodge_R.fbx",
+      "passed": true,
+      "evidence": "animations/Dodge_R.fbx"
+    },
+    {
+      "name": "only_one_static_mesh",
+      "passed": true,
+      "evidence": [
+        "MESH"
+      ]
+    },
+    {
+      "name": "triangle_count",
+      "passed": true,
+      "evidence": 4180
+    },
+    {
+      "name": "geometry_budget",
+      "passed": true,
+      "evidence": 4180
+    },
+    {
+      "name": "metre_scale",
+      "passed": true,
+      "evidence": [
+        12.000001907348633,
+        12.000001907348633,
+        5.110000282526016
+      ]
+    },
+    {
+      "name": "material_names_order",
+      "passed": true,
+      "evidence": [
+        "Arena_Concrete",
+        "Arena_Steel",
+        "Arena_Deck",
+        "Arena_Trim",
+        "Arena_Rubber",
+        "Arena_Wall",
+        "Arena_Lamp",
+        "Arena_ColdLamp"
+      ]
+    },
+    {
+      "name": "uv_channel",
+      "passed": true,
+      "evidence": 1
+    },
+    {
+      "name": "finite_uv_range",
+      "passed": true,
+      "evidence": "All UV coordinates in [0,1]"
+    },
+    {
+      "name": "nondegenerate_triangles",
+      "passed": true,
+      "evidence": 3.4643221624719445e-06
+    },
+    {
+      "name": "no_vertex_groups",
+      "passed": true,
+      "evidence": 0
+    },
+    {
+      "name": "portable_vanguard_BaseColor",
+      "passed": true,
+      "evidence": "ArtSource/Textures/robots/vanguard/T_IE_vanguard_BaseColor.png"
+    },
+    {
+      "name": "portable_vanguard_ORM",
+      "passed": true,
+      "evidence": "ArtSource/Textures/robots/vanguard/T_IE_vanguard_ORM.png"
+    },
+    {
+      "name": "portable_vanguard_Normal",
+      "passed": true,
+      "evidence": "ArtSource/Textures/robots/vanguard/T_IE_vanguard_Normal.png"
+    },
+    {
+      "name": "portable_bulwark_BaseColor",
+      "passed": true,
+      "evidence": "ArtSource/Textures/robots/bulwark/T_IE_bulwark_BaseColor.png"
+    },
+    {
+      "name": "portable_bulwark_ORM",
+      "passed": true,
+      "evidence": "ArtSource/Textures/robots/bulwark/T_IE_bulwark_ORM.png"
+    },
+    {
+      "name": "portable_bulwark_Normal",
+      "passed": true,
+      "evidence": "ArtSource/Textures/robots/bulwark/T_IE_bulwark_Normal.png"
+    },
+    {
+      "name": "camera_safe_frame_enemy_Guard_0",
+      "passed": true,
+      "evidence": {
+        "head": {
+          "sample_vertices": 47,
+          "same_bone_first_hit_fraction": 0.8085106382978723,
+          "inside_safe_frame_fraction": 1.0,
+          "player_first_hit_fraction": 0.06382978723404255,
+          "screen_bounds_normalized": {
+            "x": [
+              0.47172680497169495,
+              0.5231388807296753
+            ],
+            "y": [
+              0.5652657151222229,
+              0.6447495818138123
+            ]
+          }
+        },
+        "hand_l": {
+          "sample_vertices": 63,
+          "same_bone_first_hit_fraction": 0.9365079365079365,
+          "inside_safe_frame_fraction": 1.0,
+          "player_first_hit_fraction": 0.0,
+          "screen_bounds_normalized": {
+            "x": [
+              0.5219960808753967,
+              0.5577917098999023
+            ],
+            "y": [
+              0.5393838286399841,
+              0.6164162158966064
+            ]
+          }
+        },
+        "hand_r": {
+          "sample_vertices": 63,
+          "same_bone_first_hit_fraction": 0.9682539682539683,
+          "inside_safe_frame_fraction": 1.0,
+          "player_first_hit_fraction": 0.0,
+          "screen_bounds_normalized": {
+            "x": [
+              0.3956005871295929,
+              0.43298664689064026
+            ],
+            "y": [
+              0.5544624924659729,
+              0.6271188855171204
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "camera_no_group_completely_hidden_enemy_Guard_0",
+      "passed": true,
+      "evidence": {
+        "head": {
+          "sample_vertices": 47,
+          "same_bone_first_hit_fraction": 0.8085106382978723,
+          "inside_safe_frame_fraction": 1.0,
+          "player_first_hit_fraction": 0.06382978723404255,
+          "screen_bounds_normalized": {
+            "x": [
+              0.47172680497169495,
+              0.5231388807296753
+            ],
+            "y": [
+              0.5652657151222229,
+              0.6447495818138123
+            ]
+          }
+        },
+        "hand_l": {
+          "sample_vertices": 63,
+          "same_bone_first_hit_fraction": 0.9365079365079365,
+          "inside_safe_frame_fraction": 1.0,
+          "player_first_hit_fraction": 0.0,
+          "screen_bounds_normalized": {
+            "x": [
+              0.5219960808753967,
+              0.5577917098999023
+            ],
+            "y": [
+              0.5393838286399841,
+              0.6164162158966064
+            ]
+          }
+        },
+        "hand_r": {
+          "sample_vertices": 63,
+          "same_bone_first_hit_fraction": 0.9682539682539683,
+          "inside_safe_frame_fraction": 1.0,
+          "player_first_hit_fraction": 0.0,
+          "screen_bounds_normalized": {
+            "x": [
+              0.3956005871295929,
+              0.43298664689064026
+            ],
+            "y": [
+              0.5544624924659729,
+              0.6271188855171204
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "camera_safe_frame_enemy_Straight_L_0.16",
+      "passed": true,
+      "evidence": {
+        "head": {
+          "sample_vertices": 47,
+          "same_bone_first_hit_fraction": 0.6808510638297872,
+          "inside_safe_frame_fraction": 1.0,
+          "player_first_hit_fraction": 0.06382978723404255,
+          "screen_bounds_normalized": {
+            "x": [
+              0.47172680497169495,
+              0.5231388807296753
+            ],
+            "y": [
+              0.5652657151222229,
+              0.6447495818138123
+            ]
+          }
+        },
+        "hand_l": {
+          "sample_vertices": 63,
+          "same_bone_first_hit_fraction": 0.9682539682539683,
+          "inside_safe_frame_fraction": 1.0,
+          "player_first_hit_fraction": 0.031746031746031744,
+          "screen_bounds_normalized": {
+            "x": [
+              0.5081275105476379,
+              0.5452829003334045
+            ],
+            "y": [
+              0.5180718898773193,
+              0.6026188731193542
+            ]
+          }
+        },
+        "hand_r": {
+          "sample_vertices": 63,
+          "same_bone_first_hit_fraction": 0.9682539682539683,
+          "inside_safe_frame_fraction": 1.0,
+          "player_first_hit_fraction": 0.0,
+          "screen_bounds_normalized": {
+            "x": [
+              0.3956005871295929,
+              0.43298664689064026
+            ],
+            "y": [
+              0.5544624924659729,
+              0.6271188855171204
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "camera_no_group_completely_hidden_enemy_Straight_L_0.16",
+      "passed": true,
+      "evidence": {
+        "head": {
+          "sample_vertices": 47,
+          "same_bone_first_hit_fraction": 0.6808510638297872,
+          "inside_safe_frame_fraction": 1.0,
+          "player_first_hit_fraction": 0.06382978723404255,
+          "screen_bounds_normalized": {
+            "x": [
+              0.47172680497169495,
+              0.5231388807296753
+            ],
+            "y": [
+              0.5652657151222229,
+              0.6447495818138123
+            ]
+          }
+        },
+        "hand_l": {
+          "sample_vertices": 63,
+          "same_bone_first_hit_fraction": 0.9682539682539683,
+          "inside_safe_frame_fraction": 1.0,
+          "player_first_hit_fraction": 0.031746031746031744,
+          "screen_bounds_normalized": {
+            "x": [
+              0.5081275105476379,
+              0.5452829003334045
+            ],
+            "y": [
+              0.5180718898773193,
+              0.6026188731193542
+            ]
+          }
+        },
+        "hand_r": {
+          "sample_vertices": 63,
+          "same_bone_first_hit_fraction": 0.9682539682539683,
+          "inside_safe_frame_fraction": 1.0,
+          "player_first_hit_fraction": 0.0,
+          "screen_bounds_normalized": {
+            "x": [
+              0.3956005871295929,
+              0.43298664689064026
+            ],
+            "y": [
+              0.5544624924659729,
+              0.6271188855171204
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "camera_safe_frame_enemy_Straight_L_0.4",
+      "passed": true,
+      "evidence": {
+        "head": {
+          "sample_vertices": 47,
+          "same_bone_first_hit_fraction": 0.8297872340425532,
+          "inside_safe_frame_fraction": 1.0,
+          "player_first_hit_fraction": 0.06382978723404255,
+          "screen_bounds_normalized": {
+            "x": [
+              0.47172680497169495,
+              0.5231388807296753
+            ],
+            "y": [
+              0.5652657151222229,
+              0.6447495818138123
+            ]
+          }
+        },
+        "hand_l": {
+          "sample_vertices": 63,
+          "same_bone_first_hit_fraction": 0.4603174603174603,
+          "inside_safe_frame_fraction": 1.0,
+          "player_first_hit_fraction": 0.5396825396825397,
+          "screen_bounds_normalized": {
+            "x": [
+              0.4948587715625763,
+              0.5330116152763367
+            ],
+            "y": [
+              0.47449204325675964,
+              0.5612496733665466
+            ]
+          }
+        },
+        "hand_r": {
+          "sample_vertices": 63,
+          "same_bone_first_hit_fraction": 0.9682539682539683,
+          "inside_safe_frame_fraction": 1.0,
+          "player_first_hit_fraction": 0.0,
+          "screen_bounds_normalized": {
+            "x": [
+              0.3956005871295929,
+              0.43298664689064026
+            ],
+            "y": [
+              0.5544624924659729,
+              0.6271188855171204
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "camera_no_group_completely_hidden_enemy_Straight_L_0.4",
+      "passed": true,
+      "evidence": {
+        "head": {
+          "sample_vertices": 47,
+          "same_bone_first_hit_fraction": 0.8297872340425532,
+          "inside_safe_frame_fraction": 1.0,
+          "player_first_hit_fraction": 0.06382978723404255,
+          "screen_bounds_normalized": {
+            "x": [
+              0.47172680497169495,
+              0.5231388807296753
+            ],
+            "y": [
+              0.5652657151222229,
+              0.6447495818138123
+            ]
+          }
+        },
+        "hand_l": {
+          "sample_vertices": 63,
+          "same_bone_first_hit_fraction": 0.4603174603174603,
+          "inside_safe_frame_fraction": 1.0,
+          "player_first_hit_fraction": 0.5396825396825397,
+          "screen_bounds_normalized": {
+            "x": [
+              0.4948587715625763,
+              0.5330116152763367
+            ],
+            "y": [
+              0.47449204325675964,
+              0.5612496733665466
+            ]
+          }
+        },
+        "hand_r": {
+          "sample_vertices": 63,
+          "same_bone_first_hit_fraction": 0.9682539682539683,
+          "inside_safe_frame_fraction": 1.0,
+          "player_first_hit_fraction": 0.0,
+          "screen_bounds_normalized": {
+            "x": [
+              0.3956005871295929,
+              0.43298664689064026
+            ],
+            "y": [
+              0.5544624924659729,
+              0.6271188855171204
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "camera_safe_frame_enemy_Straight_L_0.8",
+      "passed": true,
+      "evidence": {
+        "head": {
+          "sample_vertices": 47,
+          "same_bone_first_hit_fraction": 0.723404255319149,
+          "inside_safe_frame_fraction": 1.0,
+          "player_first_hit_fraction": 0.06382978723404255,
+          "screen_bounds_normalized": {
+            "x": [
+              0.47172680497169495,
+              0.5231388807296753
+            ],
+            "y": [
+              0.5652657151222229,
+              0.6447495818138123
+            ]
+          }
+        },
+        "hand_l": {
+          "sample_vertices": 63,
+          "same_bone_first_hit_fraction": 0.9682539682539683,
+          "inside_safe_frame_fraction": 1.0,
+          "player_first_hit_fraction": 0.015873015873015872,
+          "screen_bounds_normalized": {
+            "x": [
+              0.5103616118431091,
+              0.5472601652145386
+            ],
+            "y": [
+              0.522419273853302,
+              0.6064797043800354
+            ]
+          }
+        },
+        "hand_r": {
+          "sample_vertices": 63,
+          "same_bone_first_hit_fraction": 0.9682539682539683,
+          "inside_safe_frame_fraction": 1.0,
+          "player_first_hit_fraction": 0.0,
+          "screen_bounds_normalized": {
+            "x": [
+              0.3956005871295929,
+              0.43298664689064026
+            ],
+            "y": [
+              0.5544624924659729,
+              0.6271188855171204
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "camera_no_group_completely_hidden_enemy_Straight_L_0.8",
+      "passed": true,
+      "evidence": {
+        "head": {
+          "sample_vertices": 47,
+          "same_bone_first_hit_fraction": 0.723404255319149,
+          "inside_safe_frame_fraction": 1.0,
+          "player_first_hit_fraction": 0.06382978723404255,
+          "screen_bounds_normalized": {
+            "x": [
+              0.47172680497169495,
+              0.5231388807296753
+            ],
+            "y": [
+              0.5652657151222229,
+              0.6447495818138123
+            ]
+          }
+        },
+        "hand_l": {
+          "sample_vertices": 63,
+          "same_bone_first_hit_fraction": 0.9682539682539683,
+          "inside_safe_frame_fraction": 1.0,
+          "player_first_hit_fraction": 0.015873015873015872,
+          "screen_bounds_normalized": {
+            "x": [
+              0.5103616118431091,
+              0.5472601652145386
+            ],
+            "y": [
+              0.522419273853302,
+              0.6064797043800354
+            ]
+          }
+        },
+        "hand_r": {
+          "sample_vertices": 63,
+          "same_bone_first_hit_fraction": 0.9682539682539683,
+          "inside_safe_frame_fraction": 1.0,
+          "player_first_hit_fraction": 0.0,
+          "screen_bounds_normalized": {
+            "x": [
+              0.3956005871295929,
+              0.43298664689064026
+            ],
+            "y": [
+              0.5544624924659729,
+              0.6271188855171204
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "camera_safe_frame_enemy_Straight_R_0.16",
+      "passed": true,
+      "evidence": {
+        "head": {
+          "sample_vertices": 47,
+          "same_bone_first_hit_fraction": 0.8085106382978723,
+          "inside_safe_frame_fraction": 1.0,
+          "player_first_hit_fraction": 0.06382978723404255,
+          "screen_bounds_normalized": {
+            "x": [
+              0.47172680497169495,
+              0.5231388807296753
+            ],
+            "y": [
+              0.5652657151222229,
+              0.6447495818138123
+            ]
+          }
+        },
+        "hand_l": {
+          "sample_vertices": 63,
+          "same_bone_first_hit_fraction": 0.9365079365079365,
+          "inside_safe_frame_fraction": 1.0,
+          "player_first_hit_fraction": 0.0,
+          "screen_bounds_normalized": {
+            "x": [
+              0.5219960808753967,
+              0.5577917098999023
+            ],
+            "y": [
+              0.5393838286399841,
+              0.6164162158966064
+            ]
+          }
+        },
+        "hand_r": {
+          "sample_vertices": 63,
+          "same_bone_first_hit_fraction": 0.9682539682539683,
+          "inside_safe_frame_fraction": 1.0,
+          "player_first_hit_fraction": 0.015873015873015872,
+          "screen_bounds_normalized": {
+            "x": [
+              0.3894634544849396,
+              0.4293961524963379
+            ],
+            "y": [
+              0.5336474776268005,
+              0.613423764705658
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "camera_no_group_completely_hidden_enemy_Straight_R_0.16",
+      "passed": true,
+      "evidence": {
+        "head": {
+          "sample_vertices": 47,
+          "same_bone_first_hit_fraction": 0.8085106382978723,
+          "inside_safe_frame_fraction": 1.0,
+          "player_first_hit_fraction": 0.06382978723404255,
+          "screen_bounds_normalized": {
+            "x": [
+              0.47172680497169495,
+              0.5231388807296753
+            ],
+            "y": [
+              0.5652657151222229,
+              0.6447495818138123
+            ]
+          }
+        },
+        "hand_l": {
+          "sample_vertices": 63,
+          "same_bone_first_hit_fraction": 0.9365079365079365,
+          "inside_safe_frame_fraction": 1.0,
+          "player_first_hit_fraction": 0.0,
+          "screen_bounds_normalized": {
+            "x": [
+              0.5219960808753967,
+              0.5577917098999023
+            ],
+            "y": [
+              0.5393838286399841,
+              0.6164162158966064
+            ]
+          }
+        },
+        "hand_r": {
+          "sample_vertices": 63,
+          "same_bone_first_hit_fraction": 0.9682539682539683,
+          "inside_safe_frame_fraction": 1.0,
+          "player_first_hit_fraction": 0.015873015873015872,
+          "screen_bounds_normalized": {
+            "x": [
+              0.3894634544849396,
+              0.4293961524963379
+            ],
+            "y": [
+              0.5336474776268005,
+              0.613423764705658
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "camera_safe_frame_enemy_Straight_R_0.4",
+      "passed": true,
+      "evidence": {
+        "head": {
+          "sample_vertices": 47,
+          "same_bone_first_hit_fraction": 0.8085106382978723,
+          "inside_safe_frame_fraction": 1.0,
+          "player_first_hit_fraction": 0.06382978723404255,
+          "screen_bounds_normalized": {
+            "x": [
+              0.47172680497169495,
+              0.5231388807296753
+            ],
+            "y": [
+              0.5652657151222229,
+              0.6447495818138123
+            ]
+          }
+        },
+        "hand_l": {
+          "sample_vertices": 63,
+          "same_bone_first_hit_fraction": 0.9365079365079365,
+          "inside_safe_frame_fraction": 1.0,
+          "player_first_hit_fraction": 0.0,
+          "screen_bounds_normalized": {
+            "x": [
+              0.5219960808753967,
+              0.5577917098999023
+            ],
+            "y": [
+              0.5393838286399841,
+              0.6164162158966064
+            ]
+          }
+        },
+        "hand_r": {
+          "sample_vertices": 63,
+          "same_bone_first_hit_fraction": 0.8412698412698413,
+          "inside_safe_frame_fraction": 1.0,
+          "player_first_hit_fraction": 0.12698412698412698,
+          "screen_bounds_normalized": {
+            "x": [
+              0.3896694779396057,
+              0.4303537905216217
+            ],
+            "y": [
+              0.4906139075756073,
+              0.5728216767311096
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "camera_no_group_completely_hidden_enemy_Straight_R_0.4",
+      "passed": true,
+      "evidence": {
+        "head": {
+          "sample_vertices": 47,
+          "same_bone_first_hit_fraction": 0.8085106382978723,
+          "inside_safe_frame_fraction": 1.0,
+          "player_first_hit_fraction": 0.06382978723404255,
+          "screen_bounds_normalized": {
+            "x": [
+              0.47172680497169495,
+              0.5231388807296753
+            ],
+            "y": [
+              0.5652657151222229,
+              0.6447495818138123
+            ]
+          }
+        },
+        "hand_l": {
+          "sample_vertices": 63,
+          "same_bone_first_hit_fraction": 0.9365079365079365,
+          "inside_safe_frame_fraction": 1.0,
+          "player_first_hit_fraction": 0.0,
+          "screen_bounds_normalized": {
+            "x": [
+              0.5219960808753967,
+              0.5577917098999023
+            ],
+            "y": [
+              0.5393838286399841,
+              0.6164162158966064
+            ]
+          }
+        },
+        "hand_r": {
+          "sample_vertices": 63,
+          "same_bone_first_hit_fraction": 0.8412698412698413,
+          "inside_safe_frame_fraction": 1.0,
+          "player_first_hit_fraction": 0.12698412698412698,
+          "screen_bounds_normalized": {
+            "x": [
+              0.3896694779396057,
+              0.4303537905216217
+            ],
+            "y": [
+              0.4906139075756073,
+              0.5728216767311096
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "camera_safe_frame_enemy_Straight_R_0.8",
+      "passed": true,
+      "evidence": {
+        "head": {
+          "sample_vertices": 47,
+          "same_bone_first_hit_fraction": 0.8085106382978723,
+          "inside_safe_frame_fraction": 1.0,
+          "player_first_hit_fraction": 0.06382978723404255,
+          "screen_bounds_normalized": {
+            "x": [
+              0.47172680497169495,
+              0.5231388807296753
+            ],
+            "y": [
+              0.5652657151222229,
+              0.6447495818138123
+            ]
+          }
+        },
+        "hand_l": {
+          "sample_vertices": 63,
+          "same_bone_first_hit_fraction": 0.9365079365079365,
+          "inside_safe_frame_fraction": 1.0,
+          "player_first_hit_fraction": 0.0,
+          "screen_bounds_normalized": {
+            "x": [
+              0.5219960808753967,
+              0.5577917098999023
+            ],
+            "y": [
+              0.5393838286399841,
+              0.6164162158966064
+            ]
+          }
+        },
+        "hand_r": {
+          "sample_vertices": 63,
+          "same_bone_first_hit_fraction": 0.9523809523809523,
+          "inside_safe_frame_fraction": 1.0,
+          "player_first_hit_fraction": 0.015873015873015872,
+          "screen_bounds_normalized": {
+            "x": [
+              0.3902733623981476,
+              0.4299635887145996
+            ],
+            "y": [
+              0.5379304885864258,
+              0.6171994805335999
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "camera_no_group_completely_hidden_enemy_Straight_R_0.8",
+      "passed": true,
+      "evidence": {
+        "head": {
+          "sample_vertices": 47,
+          "same_bone_first_hit_fraction": 0.8085106382978723,
+          "inside_safe_frame_fraction": 1.0,
+          "player_first_hit_fraction": 0.06382978723404255,
+          "screen_bounds_normalized": {
+            "x": [
+              0.47172680497169495,
+              0.5231388807296753
+            ],
+            "y": [
+              0.5652657151222229,
+              0.6447495818138123
+            ]
+          }
+        },
+        "hand_l": {
+          "sample_vertices": 63,
+          "same_bone_first_hit_fraction": 0.9365079365079365,
+          "inside_safe_frame_fraction": 1.0,
+          "player_first_hit_fraction": 0.0,
+          "screen_bounds_normalized": {
+            "x": [
+              0.5219960808753967,
+              0.5577917098999023
+            ],
+            "y": [
+              0.5393838286399841,
+              0.6164162158966064
+            ]
+          }
+        },
+        "hand_r": {
+          "sample_vertices": 63,
+          "same_bone_first_hit_fraction": 0.9523809523809523,
+          "inside_safe_frame_fraction": 1.0,
+          "player_first_hit_fraction": 0.015873015873015872,
+          "screen_bounds_normalized": {
+            "x": [
+              0.3902733623981476,
+              0.4299635887145996
+            ],
+            "y": [
+              0.5379304885864258,
+              0.6171994805335999
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "camera_safe_frame_enemy_Dodge_L_0.5",
+      "passed": true,
+      "evidence": {
+        "head": {
+          "sample_vertices": 47,
+          "same_bone_first_hit_fraction": 0.8936170212765957,
+          "inside_safe_frame_fraction": 1.0,
+          "player_first_hit_fraction": 0.06382978723404255,
+          "screen_bounds_normalized": {
+            "x": [
+              0.4788804054260254,
+              0.523445188999176
+            ],
+            "y": [
+              0.5646717548370361,
+              0.6436732411384583
+            ]
+          }
+        },
+        "hand_l": {
+          "sample_vertices": 63,
+          "same_bone_first_hit_fraction": 0.9841269841269841,
+          "inside_safe_frame_fraction": 1.0,
+          "player_first_hit_fraction": 0.0,
+          "screen_bounds_normalized": {
+            "x": [
+              0.5534396171569824,
+              0.5867588520050049
+            ],
+            "y": [
+              0.5454781651496887,
+              0.6215860843658447
+            ]
+          }
+        },
+        "hand_r": {
+          "sample_vertices": 63,
+          "same_bone_first_hit_fraction": 0.9841269841269841,
+          "inside_safe_frame_fraction": 1.0,
+          "player_first_hit_fraction": 0.0,
+          "screen_bounds_normalized": {
+            "x": [
+              0.4195558726787567,
+              0.45152005553245544
+            ],
+            "y": [
+              0.5434353947639465,
+              0.6201820969581604
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "camera_no_group_completely_hidden_enemy_Dodge_L_0.5",
+      "passed": true,
+      "evidence": {
+        "head": {
+          "sample_vertices": 47,
+          "same_bone_first_hit_fraction": 0.8936170212765957,
+          "inside_safe_frame_fraction": 1.0,
+          "player_first_hit_fraction": 0.06382978723404255,
+          "screen_bounds_normalized": {
+            "x": [
+              0.4788804054260254,
+              0.523445188999176
+            ],
+            "y": [
+              0.5646717548370361,
+              0.6436732411384583
+            ]
+          }
+        },
+        "hand_l": {
+          "sample_vertices": 63,
+          "same_bone_first_hit_fraction": 0.9841269841269841,
+          "inside_safe_frame_fraction": 1.0,
+          "player_first_hit_fraction": 0.0,
+          "screen_bounds_normalized": {
+            "x": [
+              0.5534396171569824,
+              0.5867588520050049
+            ],
+            "y": [
+              0.5454781651496887,
+              0.6215860843658447
+            ]
+          }
+        },
+        "hand_r": {
+          "sample_vertices": 63,
+          "same_bone_first_hit_fraction": 0.9841269841269841,
+          "inside_safe_frame_fraction": 1.0,
+          "player_first_hit_fraction": 0.0,
+          "screen_bounds_normalized": {
+            "x": [
+              0.4195558726787567,
+              0.45152005553245544
+            ],
+            "y": [
+              0.5434353947639465,
+              0.6201820969581604
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "camera_safe_frame_enemy_Dodge_R_0.5",
+      "passed": true,
+      "evidence": {
+        "head": {
+          "sample_vertices": 47,
+          "same_bone_first_hit_fraction": 0.5106382978723404,
+          "inside_safe_frame_fraction": 1.0,
+          "player_first_hit_fraction": 0.06382978723404255,
+          "screen_bounds_normalized": {
+            "x": [
+              0.4680398106575012,
+              0.5256234407424927
+            ],
+            "y": [
+              0.5647684335708618,
+              0.645251452922821
+            ]
+          }
+        },
+        "hand_l": {
+          "sample_vertices": 63,
+          "same_bone_first_hit_fraction": 0.746031746031746,
+          "inside_safe_frame_fraction": 1.0,
+          "player_first_hit_fraction": 0.1746031746031746,
+          "screen_bounds_normalized": {
+            "x": [
+              0.4828947186470032,
+              0.5263479351997375
+            ],
+            "y": [
+              0.5338728427886963,
+              0.6146774888038635
+            ]
+          }
+        },
+        "hand_r": {
+          "sample_vertices": 63,
+          "same_bone_first_hit_fraction": 0.9682539682539683,
+          "inside_safe_frame_fraction": 1.0,
+          "player_first_hit_fraction": 0.0,
+          "screen_bounds_normalized": {
+            "x": [
+              0.3856571912765503,
+              0.42571398615837097
+            ],
+            "y": [
+              0.5637399554252625,
+              0.6358942985534668
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "camera_no_group_completely_hidden_enemy_Dodge_R_0.5",
+      "passed": true,
+      "evidence": {
+        "head": {
+          "sample_vertices": 47,
+          "same_bone_first_hit_fraction": 0.5106382978723404,
+          "inside_safe_frame_fraction": 1.0,
+          "player_first_hit_fraction": 0.06382978723404255,
+          "screen_bounds_normalized": {
+            "x": [
+              0.4680398106575012,
+              0.5256234407424927
+            ],
+            "y": [
+              0.5647684335708618,
+              0.645251452922821
+            ]
+          }
+        },
+        "hand_l": {
+          "sample_vertices": 63,
+          "same_bone_first_hit_fraction": 0.746031746031746,
+          "inside_safe_frame_fraction": 1.0,
+          "player_first_hit_fraction": 0.1746031746031746,
+          "screen_bounds_normalized": {
+            "x": [
+              0.4828947186470032,
+              0.5263479351997375
+            ],
+            "y": [
+              0.5338728427886963,
+              0.6146774888038635
+            ]
+          }
+        },
+        "hand_r": {
+          "sample_vertices": 63,
+          "same_bone_first_hit_fraction": 0.9682539682539683,
+          "inside_safe_frame_fraction": 1.0,
+          "player_first_hit_fraction": 0.0,
+          "screen_bounds_normalized": {
+            "x": [
+              0.3856571912765503,
+              0.42571398615837097
+            ],
+            "y": [
+              0.5637399554252625,
+              0.6358942985534668
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "camera_safe_frame_player_Straight_L_0.16",
+      "passed": true,
+      "evidence": {
+        "head": {
+          "sample_vertices": 47,
+          "same_bone_first_hit_fraction": 0.8085106382978723,
+          "inside_safe_frame_fraction": 1.0,
+          "player_first_hit_fraction": 0.06382978723404255,
+          "screen_bounds_normalized": {
+            "x": [
+              0.47172680497169495,
+              0.5231388807296753
+            ],
+            "y": [
+              0.5652657151222229,
+              0.6447495818138123
+            ]
+          }
+        },
+        "hand_l": {
+          "sample_vertices": 63,
+          "same_bone_first_hit_fraction": 0.9365079365079365,
+          "inside_safe_frame_fraction": 1.0,
+          "player_first_hit_fraction": 0.0,
+          "screen_bounds_normalized": {
+            "x": [
+              0.5219960808753967,
+              0.5577917098999023
+            ],
+            "y": [
+              0.5393838286399841,
+              0.6164162158966064
+            ]
+          }
+        },
+        "hand_r": {
+          "sample_vertices": 63,
+          "same_bone_first_hit_fraction": 0.9682539682539683,
+          "inside_safe_frame_fraction": 1.0,
+          "player_first_hit_fraction": 0.0,
+          "screen_bounds_normalized": {
+            "x": [
+              0.3956005871295929,
+              0.43298664689064026
+            ],
+            "y": [
+              0.5544624924659729,
+              0.6271188855171204
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "camera_no_group_completely_hidden_player_Straight_L_0.16",
+      "passed": true,
+      "evidence": {
+        "head": {
+          "sample_vertices": 47,
+          "same_bone_first_hit_fraction": 0.8085106382978723,
+          "inside_safe_frame_fraction": 1.0,
+          "player_first_hit_fraction": 0.06382978723404255,
+          "screen_bounds_normalized": {
+            "x": [
+              0.47172680497169495,
+              0.5231388807296753
+            ],
+            "y": [
+              0.5652657151222229,
+              0.6447495818138123
+            ]
+          }
+        },
+        "hand_l": {
+          "sample_vertices": 63,
+          "same_bone_first_hit_fraction": 0.9365079365079365,
+          "inside_safe_frame_fraction": 1.0,
+          "player_first_hit_fraction": 0.0,
+          "screen_bounds_normalized": {
+            "x": [
+              0.5219960808753967,
+              0.5577917098999023
+            ],
+            "y": [
+              0.5393838286399841,
+              0.6164162158966064
+            ]
+          }
+        },
+        "hand_r": {
+          "sample_vertices": 63,
+          "same_bone_first_hit_fraction": 0.9682539682539683,
+          "inside_safe_frame_fraction": 1.0,
+          "player_first_hit_fraction": 0.0,
+          "screen_bounds_normalized": {
+            "x": [
+              0.3956005871295929,
+              0.43298664689064026
+            ],
+            "y": [
+              0.5544624924659729,
+              0.6271188855171204
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "camera_safe_frame_player_Straight_L_0.4",
+      "passed": true,
+      "evidence": {
+        "head": {
+          "sample_vertices": 47,
+          "same_bone_first_hit_fraction": 0.8085106382978723,
+          "inside_safe_frame_fraction": 1.0,
+          "player_first_hit_fraction": 0.06382978723404255,
+          "screen_bounds_normalized": {
+            "x": [
+              0.47172680497169495,
+              0.5231388807296753
+            ],
+            "y": [
+              0.5652657151222229,
+              0.6447495818138123
+            ]
+          }
+        },
+        "hand_l": {
+          "sample_vertices": 63,
+          "same_bone_first_hit_fraction": 0.9365079365079365,
+          "inside_safe_frame_fraction": 1.0,
+          "player_first_hit_fraction": 0.0,
+          "screen_bounds_normalized": {
+            "x": [
+              0.5219960808753967,
+              0.5577917098999023
+            ],
+            "y": [
+              0.5393838286399841,
+              0.6164162158966064
+            ]
+          }
+        },
+        "hand_r": {
+          "sample_vertices": 63,
+          "same_bone_first_hit_fraction": 0.9682539682539683,
+          "inside_safe_frame_fraction": 1.0,
+          "player_first_hit_fraction": 0.0,
+          "screen_bounds_normalized": {
+            "x": [
+              0.3956005871295929,
+              0.43298664689064026
+            ],
+            "y": [
+              0.5544624924659729,
+              0.6271188855171204
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "camera_no_group_completely_hidden_player_Straight_L_0.4",
+      "passed": true,
+      "evidence": {
+        "head": {
+          "sample_vertices": 47,
+          "same_bone_first_hit_fraction": 0.8085106382978723,
+          "inside_safe_frame_fraction": 1.0,
+          "player_first_hit_fraction": 0.06382978723404255,
+          "screen_bounds_normalized": {
+            "x": [
+              0.47172680497169495,
+              0.5231388807296753
+            ],
+            "y": [
+              0.5652657151222229,
+              0.6447495818138123
+            ]
+          }
+        },
+        "hand_l": {
+          "sample_vertices": 63,
+          "same_bone_first_hit_fraction": 0.9365079365079365,
+          "inside_safe_frame_fraction": 1.0,
+          "player_first_hit_fraction": 0.0,
+          "screen_bounds_normalized": {
+            "x": [
+              0.5219960808753967,
+              0.5577917098999023
+            ],
+            "y": [
+              0.5393838286399841,
+              0.6164162158966064
+            ]
+          }
+        },
+        "hand_r": {
+          "sample_vertices": 63,
+          "same_bone_first_hit_fraction": 0.9682539682539683,
+          "inside_safe_frame_fraction": 1.0,
+          "player_first_hit_fraction": 0.0,
+          "screen_bounds_normalized": {
+            "x": [
+              0.3956005871295929,
+              0.43298664689064026
+            ],
+            "y": [
+              0.5544624924659729,
+              0.6271188855171204
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "camera_safe_frame_player_Straight_L_0.8",
+      "passed": true,
+      "evidence": {
+        "head": {
+          "sample_vertices": 47,
+          "same_bone_first_hit_fraction": 0.8085106382978723,
+          "inside_safe_frame_fraction": 1.0,
+          "player_first_hit_fraction": 0.06382978723404255,
+          "screen_bounds_normalized": {
+            "x": [
+              0.47172680497169495,
+              0.5231388807296753
+            ],
+            "y": [
+              0.5652657151222229,
+              0.6447495818138123
+            ]
+          }
+        },
+        "hand_l": {
+          "sample_vertices": 63,
+          "same_bone_first_hit_fraction": 0.9365079365079365,
+          "inside_safe_frame_fraction": 1.0,
+          "player_first_hit_fraction": 0.0,
+          "screen_bounds_normalized": {
+            "x": [
+              0.5219960808753967,
+              0.5577917098999023
+            ],
+            "y": [
+              0.5393838286399841,
+              0.6164162158966064
+            ]
+          }
+        },
+        "hand_r": {
+          "sample_vertices": 63,
+          "same_bone_first_hit_fraction": 0.9682539682539683,
+          "inside_safe_frame_fraction": 1.0,
+          "player_first_hit_fraction": 0.0,
+          "screen_bounds_normalized": {
+            "x": [
+              0.3956005871295929,
+              0.43298664689064026
+            ],
+            "y": [
+              0.5544624924659729,
+              0.6271188855171204
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "camera_no_group_completely_hidden_player_Straight_L_0.8",
+      "passed": true,
+      "evidence": {
+        "head": {
+          "sample_vertices": 47,
+          "same_bone_first_hit_fraction": 0.8085106382978723,
+          "inside_safe_frame_fraction": 1.0,
+          "player_first_hit_fraction": 0.06382978723404255,
+          "screen_bounds_normalized": {
+            "x": [
+              0.47172680497169495,
+              0.5231388807296753
+            ],
+            "y": [
+              0.5652657151222229,
+              0.6447495818138123
+            ]
+          }
+        },
+        "hand_l": {
+          "sample_vertices": 63,
+          "same_bone_first_hit_fraction": 0.9365079365079365,
+          "inside_safe_frame_fraction": 1.0,
+          "player_first_hit_fraction": 0.0,
+          "screen_bounds_normalized": {
+            "x": [
+              0.5219960808753967,
+              0.5577917098999023
+            ],
+            "y": [
+              0.5393838286399841,
+              0.6164162158966064
+            ]
+          }
+        },
+        "hand_r": {
+          "sample_vertices": 63,
+          "same_bone_first_hit_fraction": 0.9682539682539683,
+          "inside_safe_frame_fraction": 1.0,
+          "player_first_hit_fraction": 0.0,
+          "screen_bounds_normalized": {
+            "x": [
+              0.3956005871295929,
+              0.43298664689064026
+            ],
+            "y": [
+              0.5544624924659729,
+              0.6271188855171204
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "camera_safe_frame_player_Straight_R_0.16",
+      "passed": true,
+      "evidence": {
+        "head": {
+          "sample_vertices": 47,
+          "same_bone_first_hit_fraction": 0.8723404255319149,
+          "inside_safe_frame_fraction": 1.0,
+          "player_first_hit_fraction": 0.0,
+          "screen_bounds_normalized": {
+            "x": [
+              0.47172680497169495,
+              0.5231388807296753
+            ],
+            "y": [
+              0.5652657151222229,
+              0.6447495818138123
+            ]
+          }
+        },
+        "hand_l": {
+          "sample_vertices": 63,
+          "same_bone_first_hit_fraction": 0.9365079365079365,
+          "inside_safe_frame_fraction": 1.0,
+          "player_first_hit_fraction": 0.0,
+          "screen_bounds_normalized": {
+            "x": [
+              0.5219960808753967,
+              0.5577917098999023
+            ],
+            "y": [
+              0.5393838286399841,
+              0.6164162158966064
+            ]
+          }
+        },
+        "hand_r": {
+          "sample_vertices": 63,
+          "same_bone_first_hit_fraction": 0.9682539682539683,
+          "inside_safe_frame_fraction": 1.0,
+          "player_first_hit_fraction": 0.0,
+          "screen_bounds_normalized": {
+            "x": [
+              0.3956005871295929,
+              0.43298664689064026
+            ],
+            "y": [
+              0.5544624924659729,
+              0.6271188855171204
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "camera_no_group_completely_hidden_player_Straight_R_0.16",
+      "passed": true,
+      "evidence": {
+        "head": {
+          "sample_vertices": 47,
+          "same_bone_first_hit_fraction": 0.8723404255319149,
+          "inside_safe_frame_fraction": 1.0,
+          "player_first_hit_fraction": 0.0,
+          "screen_bounds_normalized": {
+            "x": [
+              0.47172680497169495,
+              0.5231388807296753
+            ],
+            "y": [
+              0.5652657151222229,
+              0.6447495818138123
+            ]
+          }
+        },
+        "hand_l": {
+          "sample_vertices": 63,
+          "same_bone_first_hit_fraction": 0.9365079365079365,
+          "inside_safe_frame_fraction": 1.0,
+          "player_first_hit_fraction": 0.0,
+          "screen_bounds_normalized": {
+            "x": [
+              0.5219960808753967,
+              0.5577917098999023
+            ],
+            "y": [
+              0.5393838286399841,
+              0.6164162158966064
+            ]
+          }
+        },
+        "hand_r": {
+          "sample_vertices": 63,
+          "same_bone_first_hit_fraction": 0.9682539682539683,
+          "inside_safe_frame_fraction": 1.0,
+          "player_first_hit_fraction": 0.0,
+          "screen_bounds_normalized": {
+            "x": [
+              0.3956005871295929,
+              0.43298664689064026
+            ],
+            "y": [
+              0.5544624924659729,
+              0.6271188855171204
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "camera_safe_frame_player_Straight_R_0.4",
+      "passed": true,
+      "evidence": {
+        "head": {
+          "sample_vertices": 47,
+          "same_bone_first_hit_fraction": 0.8723404255319149,
+          "inside_safe_frame_fraction": 1.0,
+          "player_first_hit_fraction": 0.0,
+          "screen_bounds_normalized": {
+            "x": [
+              0.47172680497169495,
+              0.5231388807296753
+            ],
+            "y": [
+              0.5652657151222229,
+              0.6447495818138123
+            ]
+          }
+        },
+        "hand_l": {
+          "sample_vertices": 63,
+          "same_bone_first_hit_fraction": 0.9365079365079365,
+          "inside_safe_frame_fraction": 1.0,
+          "player_first_hit_fraction": 0.0,
+          "screen_bounds_normalized": {
+            "x": [
+              0.5219960808753967,
+              0.5577917098999023
+            ],
+            "y": [
+              0.5393838286399841,
+              0.6164162158966064
+            ]
+          }
+        },
+        "hand_r": {
+          "sample_vertices": 63,
+          "same_bone_first_hit_fraction": 0.9682539682539683,
+          "inside_safe_frame_fraction": 1.0,
+          "player_first_hit_fraction": 0.0,
+          "screen_bounds_normalized": {
+            "x": [
+              0.3956005871295929,
+              0.43298664689064026
+            ],
+            "y": [
+              0.5544624924659729,
+              0.6271188855171204
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "camera_no_group_completely_hidden_player_Straight_R_0.4",
+      "passed": true,
+      "evidence": {
+        "head": {
+          "sample_vertices": 47,
+          "same_bone_first_hit_fraction": 0.8723404255319149,
+          "inside_safe_frame_fraction": 1.0,
+          "player_first_hit_fraction": 0.0,
+          "screen_bounds_normalized": {
+            "x": [
+              0.47172680497169495,
+              0.5231388807296753
+            ],
+            "y": [
+              0.5652657151222229,
+              0.6447495818138123
+            ]
+          }
+        },
+        "hand_l": {
+          "sample_vertices": 63,
+          "same_bone_first_hit_fraction": 0.9365079365079365,
+          "inside_safe_frame_fraction": 1.0,
+          "player_first_hit_fraction": 0.0,
+          "screen_bounds_normalized": {
+            "x": [
+              0.5219960808753967,
+              0.5577917098999023
+            ],
+            "y": [
+              0.5393838286399841,
+              0.6164162158966064
+            ]
+          }
+        },
+        "hand_r": {
+          "sample_vertices": 63,
+          "same_bone_first_hit_fraction": 0.9682539682539683,
+          "inside_safe_frame_fraction": 1.0,
+          "player_first_hit_fraction": 0.0,
+          "screen_bounds_normalized": {
+            "x": [
+              0.3956005871295929,
+              0.43298664689064026
+            ],
+            "y": [
+              0.5544624924659729,
+              0.6271188855171204
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "camera_safe_frame_player_Straight_R_0.8",
+      "passed": true,
+      "evidence": {
+        "head": {
+          "sample_vertices": 47,
+          "same_bone_first_hit_fraction": 0.8085106382978723,
+          "inside_safe_frame_fraction": 1.0,
+          "player_first_hit_fraction": 0.06382978723404255,
+          "screen_bounds_normalized": {
+            "x": [
+              0.47172680497169495,
+              0.5231388807296753
+            ],
+            "y": [
+              0.5652657151222229,
+              0.6447495818138123
+            ]
+          }
+        },
+        "hand_l": {
+          "sample_vertices": 63,
+          "same_bone_first_hit_fraction": 0.9365079365079365,
+          "inside_safe_frame_fraction": 1.0,
+          "player_first_hit_fraction": 0.0,
+          "screen_bounds_normalized": {
+            "x": [
+              0.5219960808753967,
+              0.5577917098999023
+            ],
+            "y": [
+              0.5393838286399841,
+              0.6164162158966064
+            ]
+          }
+        },
+        "hand_r": {
+          "sample_vertices": 63,
+          "same_bone_first_hit_fraction": 0.9682539682539683,
+          "inside_safe_frame_fraction": 1.0,
+          "player_first_hit_fraction": 0.0,
+          "screen_bounds_normalized": {
+            "x": [
+              0.3956005871295929,
+              0.43298664689064026
+            ],
+            "y": [
+              0.5544624924659729,
+              0.6271188855171204
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "camera_no_group_completely_hidden_player_Straight_R_0.8",
+      "passed": true,
+      "evidence": {
+        "head": {
+          "sample_vertices": 47,
+          "same_bone_first_hit_fraction": 0.8085106382978723,
+          "inside_safe_frame_fraction": 1.0,
+          "player_first_hit_fraction": 0.06382978723404255,
+          "screen_bounds_normalized": {
+            "x": [
+              0.47172680497169495,
+              0.5231388807296753
+            ],
+            "y": [
+              0.5652657151222229,
+              0.6447495818138123
+            ]
+          }
+        },
+        "hand_l": {
+          "sample_vertices": 63,
+          "same_bone_first_hit_fraction": 0.9365079365079365,
+          "inside_safe_frame_fraction": 1.0,
+          "player_first_hit_fraction": 0.0,
+          "screen_bounds_normalized": {
+            "x": [
+              0.5219960808753967,
+              0.5577917098999023
+            ],
+            "y": [
+              0.5393838286399841,
+              0.6164162158966064
+            ]
+          }
+        },
+        "hand_r": {
+          "sample_vertices": 63,
+          "same_bone_first_hit_fraction": 0.9682539682539683,
+          "inside_safe_frame_fraction": 1.0,
+          "player_first_hit_fraction": 0.0,
+          "screen_bounds_normalized": {
+            "x": [
+              0.3956005871295929,
+              0.43298664689064026
+            ],
+            "y": [
+              0.5544624924659729,
+              0.6271188855171204
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "camera_safe_frame_player_Dodge_L_0.5",
+      "passed": true,
+      "evidence": {
+        "head": {
+          "sample_vertices": 47,
+          "same_bone_first_hit_fraction": 0.8085106382978723,
+          "inside_safe_frame_fraction": 1.0,
+          "player_first_hit_fraction": 0.0851063829787234,
+          "screen_bounds_normalized": {
+            "x": [
+              0.47172680497169495,
+              0.5231388807296753
+            ],
+            "y": [
+              0.5652657151222229,
+              0.6447495818138123
+            ]
+          }
+        },
+        "hand_l": {
+          "sample_vertices": 63,
+          "same_bone_first_hit_fraction": 0.9365079365079365,
+          "inside_safe_frame_fraction": 1.0,
+          "player_first_hit_fraction": 0.0,
+          "screen_bounds_normalized": {
+            "x": [
+              0.5219960808753967,
+              0.5577917098999023
+            ],
+            "y": [
+              0.5393838286399841,
+              0.6164162158966064
+            ]
+          }
+        },
+        "hand_r": {
+          "sample_vertices": 63,
+          "same_bone_first_hit_fraction": 0.9682539682539683,
+          "inside_safe_frame_fraction": 1.0,
+          "player_first_hit_fraction": 0.0,
+          "screen_bounds_normalized": {
+            "x": [
+              0.3956005871295929,
+              0.43298664689064026
+            ],
+            "y": [
+              0.5544624924659729,
+              0.6271188855171204
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "camera_no_group_completely_hidden_player_Dodge_L_0.5",
+      "passed": true,
+      "evidence": {
+        "head": {
+          "sample_vertices": 47,
+          "same_bone_first_hit_fraction": 0.8085106382978723,
+          "inside_safe_frame_fraction": 1.0,
+          "player_first_hit_fraction": 0.0851063829787234,
+          "screen_bounds_normalized": {
+            "x": [
+              0.47172680497169495,
+              0.5231388807296753
+            ],
+            "y": [
+              0.5652657151222229,
+              0.6447495818138123
+            ]
+          }
+        },
+        "hand_l": {
+          "sample_vertices": 63,
+          "same_bone_first_hit_fraction": 0.9365079365079365,
+          "inside_safe_frame_fraction": 1.0,
+          "player_first_hit_fraction": 0.0,
+          "screen_bounds_normalized": {
+            "x": [
+              0.5219960808753967,
+              0.5577917098999023
+            ],
+            "y": [
+              0.5393838286399841,
+              0.6164162158966064
+            ]
+          }
+        },
+        "hand_r": {
+          "sample_vertices": 63,
+          "same_bone_first_hit_fraction": 0.9682539682539683,
+          "inside_safe_frame_fraction": 1.0,
+          "player_first_hit_fraction": 0.0,
+          "screen_bounds_normalized": {
+            "x": [
+              0.3956005871295929,
+              0.43298664689064026
+            ],
+            "y": [
+              0.5544624924659729,
+              0.6271188855171204
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "camera_safe_frame_player_Dodge_R_0.5",
+      "passed": true,
+      "evidence": {
+        "head": {
+          "sample_vertices": 47,
+          "same_bone_first_hit_fraction": 0.8723404255319149,
+          "inside_safe_frame_fraction": 1.0,
+          "player_first_hit_fraction": 0.0,
+          "screen_bounds_normalized": {
+            "x": [
+              0.47172680497169495,
+              0.5231388807296753
+            ],
+            "y": [
+              0.5652657151222229,
+              0.6447495818138123
+            ]
+          }
+        },
+        "hand_l": {
+          "sample_vertices": 63,
+          "same_bone_first_hit_fraction": 0.9047619047619048,
+          "inside_safe_frame_fraction": 1.0,
+          "player_first_hit_fraction": 0.031746031746031744,
+          "screen_bounds_normalized": {
+            "x": [
+              0.5219960808753967,
+              0.5577917098999023
+            ],
+            "y": [
+              0.5393838286399841,
+              0.6164162158966064
+            ]
+          }
+        },
+        "hand_r": {
+          "sample_vertices": 63,
+          "same_bone_first_hit_fraction": 0.9523809523809523,
+          "inside_safe_frame_fraction": 1.0,
+          "player_first_hit_fraction": 0.015873015873015872,
+          "screen_bounds_normalized": {
+            "x": [
+              0.3956005871295929,
+              0.43298664689064026
+            ],
+            "y": [
+              0.5544624924659729,
+              0.6271188855171204
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "camera_no_group_completely_hidden_player_Dodge_R_0.5",
+      "passed": true,
+      "evidence": {
+        "head": {
+          "sample_vertices": 47,
+          "same_bone_first_hit_fraction": 0.8723404255319149,
+          "inside_safe_frame_fraction": 1.0,
+          "player_first_hit_fraction": 0.0,
+          "screen_bounds_normalized": {
+            "x": [
+              0.47172680497169495,
+              0.5231388807296753
+            ],
+            "y": [
+              0.5652657151222229,
+              0.6447495818138123
+            ]
+          }
+        },
+        "hand_l": {
+          "sample_vertices": 63,
+          "same_bone_first_hit_fraction": 0.9047619047619048,
+          "inside_safe_frame_fraction": 1.0,
+          "player_first_hit_fraction": 0.031746031746031744,
+          "screen_bounds_normalized": {
+            "x": [
+              0.5219960808753967,
+              0.5577917098999023
+            ],
+            "y": [
+              0.5393838286399841,
+              0.6164162158966064
+            ]
+          }
+        },
+        "hand_r": {
+          "sample_vertices": 63,
+          "same_bone_first_hit_fraction": 0.9523809523809523,
+          "inside_safe_frame_fraction": 1.0,
+          "player_first_hit_fraction": 0.015873015873015872,
+          "screen_bounds_normalized": {
+            "x": [
+              0.3956005871295929,
+              0.43298664689064026
+            ],
+            "y": [
+              0.5544624924659729,
+              0.6271188855171204
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "passed": 61,
+  "total": 61,
+  "camera": {
+    "pose_cases": 17,
+    "minimum_same_bone_first_hit_fraction": 0.4603174603174603,
+    "frames": [
+      {
+        "actor": "enemy",
+        "clip": "Guard",
+        "normalized_time": 0,
+        "groups": {
+          "head": {
+            "sample_vertices": 47,
+            "same_bone_first_hit_fraction": 0.8085106382978723,
+            "inside_safe_frame_fraction": 1.0,
+            "player_first_hit_fraction": 0.06382978723404255,
+            "screen_bounds_normalized": {
+              "x": [
+                0.47172680497169495,
+                0.5231388807296753
+              ],
+              "y": [
+                0.5652657151222229,
+                0.6447495818138123
+              ]
+            }
+          },
+          "hand_l": {
+            "sample_vertices": 63,
+            "same_bone_first_hit_fraction": 0.9365079365079365,
+            "inside_safe_frame_fraction": 1.0,
+            "player_first_hit_fraction": 0.0,
+            "screen_bounds_normalized": {
+              "x": [
+                0.5219960808753967,
+                0.5577917098999023
+              ],
+              "y": [
+                0.5393838286399841,
+                0.6164162158966064
+              ]
+            }
+          },
+          "hand_r": {
+            "sample_vertices": 63,
+            "same_bone_first_hit_fraction": 0.9682539682539683,
+            "inside_safe_frame_fraction": 1.0,
+            "player_first_hit_fraction": 0.0,
+            "screen_bounds_normalized": {
+              "x": [
+                0.3956005871295929,
+                0.43298664689064026
+              ],
+              "y": [
+                0.5544624924659729,
+                0.6271188855171204
+              ]
+            }
+          }
+        }
+      },
+      {
+        "actor": "enemy",
+        "clip": "Straight_L",
+        "normalized_time": 0.16,
+        "groups": {
+          "head": {
+            "sample_vertices": 47,
+            "same_bone_first_hit_fraction": 0.6808510638297872,
+            "inside_safe_frame_fraction": 1.0,
+            "player_first_hit_fraction": 0.06382978723404255,
+            "screen_bounds_normalized": {
+              "x": [
+                0.47172680497169495,
+                0.5231388807296753
+              ],
+              "y": [
+                0.5652657151222229,
+                0.6447495818138123
+              ]
+            }
+          },
+          "hand_l": {
+            "sample_vertices": 63,
+            "same_bone_first_hit_fraction": 0.9682539682539683,
+            "inside_safe_frame_fraction": 1.0,
+            "player_first_hit_fraction": 0.031746031746031744,
+            "screen_bounds_normalized": {
+              "x": [
+                0.5081275105476379,
+                0.5452829003334045
+              ],
+              "y": [
+                0.5180718898773193,
+                0.6026188731193542
+              ]
+            }
+          },
+          "hand_r": {
+            "sample_vertices": 63,
+            "same_bone_first_hit_fraction": 0.9682539682539683,
+            "inside_safe_frame_fraction": 1.0,
+            "player_first_hit_fraction": 0.0,
+            "screen_bounds_normalized": {
+              "x": [
+                0.3956005871295929,
+                0.43298664689064026
+              ],
+              "y": [
+                0.5544624924659729,
+                0.6271188855171204
+              ]
+            }
+          }
+        }
+      },
+      {
+        "actor": "enemy",
+        "clip": "Straight_L",
+        "normalized_time": 0.4,
+        "groups": {
+          "head": {
+            "sample_vertices": 47,
+            "same_bone_first_hit_fraction": 0.8297872340425532,
+            "inside_safe_frame_fraction": 1.0,
+            "player_first_hit_fraction": 0.06382978723404255,
+            "screen_bounds_normalized": {
+              "x": [
+                0.47172680497169495,
+                0.5231388807296753
+              ],
+              "y": [
+                0.5652657151222229,
+                0.6447495818138123
+              ]
+            }
+          },
+          "hand_l": {
+            "sample_vertices": 63,
+            "same_bone_first_hit_fraction": 0.4603174603174603,
+            "inside_safe_frame_fraction": 1.0,
+            "player_first_hit_fraction": 0.5396825396825397,
+            "screen_bounds_normalized": {
+              "x": [
+                0.4948587715625763,
+                0.5330116152763367
+              ],
+              "y": [
+                0.47449204325675964,
+                0.5612496733665466
+              ]
+            }
+          },
+          "hand_r": {
+            "sample_vertices": 63,
+            "same_bone_first_hit_fraction": 0.9682539682539683,
+            "inside_safe_frame_fraction": 1.0,
+            "player_first_hit_fraction": 0.0,
+            "screen_bounds_normalized": {
+              "x": [
+                0.3956005871295929,
+                0.43298664689064026
+              ],
+              "y": [
+                0.5544624924659729,
+                0.6271188855171204
+              ]
+            }
+          }
+        }
+      },
+      {
+        "actor": "enemy",
+        "clip": "Straight_L",
+        "normalized_time": 0.8,
+        "groups": {
+          "head": {
+            "sample_vertices": 47,
+            "same_bone_first_hit_fraction": 0.723404255319149,
+            "inside_safe_frame_fraction": 1.0,
+            "player_first_hit_fraction": 0.06382978723404255,
+            "screen_bounds_normalized": {
+              "x": [
+                0.47172680497169495,
+                0.5231388807296753
+              ],
+              "y": [
+                0.5652657151222229,
+                0.6447495818138123
+              ]
+            }
+          },
+          "hand_l": {
+            "sample_vertices": 63,
+            "same_bone_first_hit_fraction": 0.9682539682539683,
+            "inside_safe_frame_fraction": 1.0,
+            "player_first_hit_fraction": 0.015873015873015872,
+            "screen_bounds_normalized": {
+              "x": [
+                0.5103616118431091,
+                0.5472601652145386
+              ],
+              "y": [
+                0.522419273853302,
+                0.6064797043800354
+              ]
+            }
+          },
+          "hand_r": {
+            "sample_vertices": 63,
+            "same_bone_first_hit_fraction": 0.9682539682539683,
+            "inside_safe_frame_fraction": 1.0,
+            "player_first_hit_fraction": 0.0,
+            "screen_bounds_normalized": {
+              "x": [
+                0.3956005871295929,
+                0.43298664689064026
+              ],
+              "y": [
+                0.5544624924659729,
+                0.6271188855171204
+              ]
+            }
+          }
+        }
+      },
+      {
+        "actor": "enemy",
+        "clip": "Straight_R",
+        "normalized_time": 0.16,
+        "groups": {
+          "head": {
+            "sample_vertices": 47,
+            "same_bone_first_hit_fraction": 0.8085106382978723,
+            "inside_safe_frame_fraction": 1.0,
+            "player_first_hit_fraction": 0.06382978723404255,
+            "screen_bounds_normalized": {
+              "x": [
+                0.47172680497169495,
+                0.5231388807296753
+              ],
+              "y": [
+                0.5652657151222229,
+                0.6447495818138123
+              ]
+            }
+          },
+          "hand_l": {
+            "sample_vertices": 63,
+            "same_bone_first_hit_fraction": 0.9365079365079365,
+            "inside_safe_frame_fraction": 1.0,
+            "player_first_hit_fraction": 0.0,
+            "screen_bounds_normalized": {
+              "x": [
+                0.5219960808753967,
+                0.5577917098999023
+              ],
+              "y": [
+                0.5393838286399841,
+                0.6164162158966064
+              ]
+            }
+          },
+          "hand_r": {
+            "sample_vertices": 63,
+            "same_bone_first_hit_fraction": 0.9682539682539683,
+            "inside_safe_frame_fraction": 1.0,
+            "player_first_hit_fraction": 0.015873015873015872,
+            "screen_bounds_normalized": {
+              "x": [
+                0.3894634544849396,
+                0.4293961524963379
+              ],
+              "y": [
+                0.5336474776268005,
+                0.613423764705658
+              ]
+            }
+          }
+        }
+      },
+      {
+        "actor": "enemy",
+        "clip": "Straight_R",
+        "normalized_time": 0.4,
+        "groups": {
+          "head": {
+            "sample_vertices": 47,
+            "same_bone_first_hit_fraction": 0.8085106382978723,
+            "inside_safe_frame_fraction": 1.0,
+            "player_first_hit_fraction": 0.06382978723404255,
+            "screen_bounds_normalized": {
+              "x": [
+                0.47172680497169495,
+                0.5231388807296753
+              ],
+              "y": [
+                0.5652657151222229,
+                0.6447495818138123
+              ]
+            }
+          },
+          "hand_l": {
+            "sample_vertices": 63,
+            "same_bone_first_hit_fraction": 0.9365079365079365,
+            "inside_safe_frame_fraction": 1.0,
+            "player_first_hit_fraction": 0.0,
+            "screen_bounds_normalized": {
+              "x": [
+                0.5219960808753967,
+                0.5577917098999023
+              ],
+              "y": [
+                0.5393838286399841,
+                0.6164162158966064
+              ]
+            }
+          },
+          "hand_r": {
+            "sample_vertices": 63,
+            "same_bone_first_hit_fraction": 0.8412698412698413,
+            "inside_safe_frame_fraction": 1.0,
+            "player_first_hit_fraction": 0.12698412698412698,
+            "screen_bounds_normalized": {
+              "x": [
+                0.3896694779396057,
+                0.4303537905216217
+              ],
+              "y": [
+                0.4906139075756073,
+                0.5728216767311096
+              ]
+            }
+          }
+        }
+      },
+      {
+        "actor": "enemy",
+        "clip": "Straight_R",
+        "normalized_time": 0.8,
+        "groups": {
+          "head": {
+            "sample_vertices": 47,
+            "same_bone_first_hit_fraction": 0.8085106382978723,
+            "inside_safe_frame_fraction": 1.0,
+            "player_first_hit_fraction": 0.06382978723404255,
+            "screen_bounds_normalized": {
+              "x": [
+                0.47172680497169495,
+                0.5231388807296753
+              ],
+              "y": [
+                0.5652657151222229,
+                0.6447495818138123
+              ]
+            }
+          },
+          "hand_l": {
+            "sample_vertices": 63,
+            "same_bone_first_hit_fraction": 0.9365079365079365,
+            "inside_safe_frame_fraction": 1.0,
+            "player_first_hit_fraction": 0.0,
+            "screen_bounds_normalized": {
+              "x": [
+                0.5219960808753967,
+                0.5577917098999023
+              ],
+              "y": [
+                0.5393838286399841,
+                0.6164162158966064
+              ]
+            }
+          },
+          "hand_r": {
+            "sample_vertices": 63,
+            "same_bone_first_hit_fraction": 0.9523809523809523,
+            "inside_safe_frame_fraction": 1.0,
+            "player_first_hit_fraction": 0.015873015873015872,
+            "screen_bounds_normalized": {
+              "x": [
+                0.3902733623981476,
+                0.4299635887145996
+              ],
+              "y": [
+                0.5379304885864258,
+                0.6171994805335999
+              ]
+            }
+          }
+        }
+      },
+      {
+        "actor": "enemy",
+        "clip": "Dodge_L",
+        "normalized_time": 0.5,
+        "groups": {
+          "head": {
+            "sample_vertices": 47,
+            "same_bone_first_hit_fraction": 0.8936170212765957,
+            "inside_safe_frame_fraction": 1.0,
+            "player_first_hit_fraction": 0.06382978723404255,
+            "screen_bounds_normalized": {
+              "x": [
+                0.4788804054260254,
+                0.523445188999176
+              ],
+              "y": [
+                0.5646717548370361,
+                0.6436732411384583
+              ]
+            }
+          },
+          "hand_l": {
+            "sample_vertices": 63,
+            "same_bone_first_hit_fraction": 0.9841269841269841,
+            "inside_safe_frame_fraction": 1.0,
+            "player_first_hit_fraction": 0.0,
+            "screen_bounds_normalized": {
+              "x": [
+                0.5534396171569824,
+                0.5867588520050049
+              ],
+              "y": [
+                0.5454781651496887,
+                0.6215860843658447
+              ]
+            }
+          },
+          "hand_r": {
+            "sample_vertices": 63,
+            "same_bone_first_hit_fraction": 0.9841269841269841,
+            "inside_safe_frame_fraction": 1.0,
+            "player_first_hit_fraction": 0.0,
+            "screen_bounds_normalized": {
+              "x": [
+                0.4195558726787567,
+                0.45152005553245544
+              ],
+              "y": [
+                0.5434353947639465,
+                0.6201820969581604
+              ]
+            }
+          }
+        }
+      },
+      {
+        "actor": "enemy",
+        "clip": "Dodge_R",
+        "normalized_time": 0.5,
+        "groups": {
+          "head": {
+            "sample_vertices": 47,
+            "same_bone_first_hit_fraction": 0.5106382978723404,
+            "inside_safe_frame_fraction": 1.0,
+            "player_first_hit_fraction": 0.06382978723404255,
+            "screen_bounds_normalized": {
+              "x": [
+                0.4680398106575012,
+                0.5256234407424927
+              ],
+              "y": [
+                0.5647684335708618,
+                0.645251452922821
+              ]
+            }
+          },
+          "hand_l": {
+            "sample_vertices": 63,
+            "same_bone_first_hit_fraction": 0.746031746031746,
+            "inside_safe_frame_fraction": 1.0,
+            "player_first_hit_fraction": 0.1746031746031746,
+            "screen_bounds_normalized": {
+              "x": [
+                0.4828947186470032,
+                0.5263479351997375
+              ],
+              "y": [
+                0.5338728427886963,
+                0.6146774888038635
+              ]
+            }
+          },
+          "hand_r": {
+            "sample_vertices": 63,
+            "same_bone_first_hit_fraction": 0.9682539682539683,
+            "inside_safe_frame_fraction": 1.0,
+            "player_first_hit_fraction": 0.0,
+            "screen_bounds_normalized": {
+              "x": [
+                0.3856571912765503,
+                0.42571398615837097
+              ],
+              "y": [
+                0.5637399554252625,
+                0.6358942985534668
+              ]
+            }
+          }
+        }
+      },
+      {
+        "actor": "player",
+        "clip": "Straight_L",
+        "normalized_time": 0.16,
+        "groups": {
+          "head": {
+            "sample_vertices": 47,
+            "same_bone_first_hit_fraction": 0.8085106382978723,
+            "inside_safe_frame_fraction": 1.0,
+            "player_first_hit_fraction": 0.06382978723404255,
+            "screen_bounds_normalized": {
+              "x": [
+                0.47172680497169495,
+                0.5231388807296753
+              ],
+              "y": [
+                0.5652657151222229,
+                0.6447495818138123
+              ]
+            }
+          },
+          "hand_l": {
+            "sample_vertices": 63,
+            "same_bone_first_hit_fraction": 0.9365079365079365,
+            "inside_safe_frame_fraction": 1.0,
+            "player_first_hit_fraction": 0.0,
+            "screen_bounds_normalized": {
+              "x": [
+                0.5219960808753967,
+                0.5577917098999023
+              ],
+              "y": [
+                0.5393838286399841,
+                0.6164162158966064
+              ]
+            }
+          },
+          "hand_r": {
+            "sample_vertices": 63,
+            "same_bone_first_hit_fraction": 0.9682539682539683,
+            "inside_safe_frame_fraction": 1.0,
+            "player_first_hit_fraction": 0.0,
+            "screen_bounds_normalized": {
+              "x": [
+                0.3956005871295929,
+                0.43298664689064026
+              ],
+              "y": [
+                0.5544624924659729,
+                0.6271188855171204
+              ]
+            }
+          }
+        }
+      },
+      {
+        "actor": "player",
+        "clip": "Straight_L",
+        "normalized_time": 0.4,
+        "groups": {
+          "head": {
+            "sample_vertices": 47,
+            "same_bone_first_hit_fraction": 0.8085106382978723,
+            "inside_safe_frame_fraction": 1.0,
+            "player_first_hit_fraction": 0.06382978723404255,
+            "screen_bounds_normalized": {
+              "x": [
+                0.47172680497169495,
+                0.5231388807296753
+              ],
+              "y": [
+                0.5652657151222229,
+                0.6447495818138123
+              ]
+            }
+          },
+          "hand_l": {
+            "sample_vertices": 63,
+            "same_bone_first_hit_fraction": 0.9365079365079365,
+            "inside_safe_frame_fraction": 1.0,
+            "player_first_hit_fraction": 0.0,
+            "screen_bounds_normalized": {
+              "x": [
+                0.5219960808753967,
+                0.5577917098999023
+              ],
+              "y": [
+                0.5393838286399841,
+                0.6164162158966064
+              ]
+            }
+          },
+          "hand_r": {
+            "sample_vertices": 63,
+            "same_bone_first_hit_fraction": 0.9682539682539683,
+            "inside_safe_frame_fraction": 1.0,
+            "player_first_hit_fraction": 0.0,
+            "screen_bounds_normalized": {
+              "x": [
+                0.3956005871295929,
+                0.43298664689064026
+              ],
+              "y": [
+                0.5544624924659729,
+                0.6271188855171204
+              ]
+            }
+          }
+        }
+      },
+      {
+        "actor": "player",
+        "clip": "Straight_L",
+        "normalized_time": 0.8,
+        "groups": {
+          "head": {
+            "sample_vertices": 47,
+            "same_bone_first_hit_fraction": 0.8085106382978723,
+            "inside_safe_frame_fraction": 1.0,
+            "player_first_hit_fraction": 0.06382978723404255,
+            "screen_bounds_normalized": {
+              "x": [
+                0.47172680497169495,
+                0.5231388807296753
+              ],
+              "y": [
+                0.5652657151222229,
+                0.6447495818138123
+              ]
+            }
+          },
+          "hand_l": {
+            "sample_vertices": 63,
+            "same_bone_first_hit_fraction": 0.9365079365079365,
+            "inside_safe_frame_fraction": 1.0,
+            "player_first_hit_fraction": 0.0,
+            "screen_bounds_normalized": {
+              "x": [
+                0.5219960808753967,
+                0.5577917098999023
+              ],
+              "y": [
+                0.5393838286399841,
+                0.6164162158966064
+              ]
+            }
+          },
+          "hand_r": {
+            "sample_vertices": 63,
+            "same_bone_first_hit_fraction": 0.9682539682539683,
+            "inside_safe_frame_fraction": 1.0,
+            "player_first_hit_fraction": 0.0,
+            "screen_bounds_normalized": {
+              "x": [
+                0.3956005871295929,
+                0.43298664689064026
+              ],
+              "y": [
+                0.5544624924659729,
+                0.6271188855171204
+              ]
+            }
+          }
+        }
+      },
+      {
+        "actor": "player",
+        "clip": "Straight_R",
+        "normalized_time": 0.16,
+        "groups": {
+          "head": {
+            "sample_vertices": 47,
+            "same_bone_first_hit_fraction": 0.8723404255319149,
+            "inside_safe_frame_fraction": 1.0,
+            "player_first_hit_fraction": 0.0,
+            "screen_bounds_normalized": {
+              "x": [
+                0.47172680497169495,
+                0.5231388807296753
+              ],
+              "y": [
+                0.5652657151222229,
+                0.6447495818138123
+              ]
+            }
+          },
+          "hand_l": {
+            "sample_vertices": 63,
+            "same_bone_first_hit_fraction": 0.9365079365079365,
+            "inside_safe_frame_fraction": 1.0,
+            "player_first_hit_fraction": 0.0,
+            "screen_bounds_normalized": {
+              "x": [
+                0.5219960808753967,
+                0.5577917098999023
+              ],
+              "y": [
+                0.5393838286399841,
+                0.6164162158966064
+              ]
+            }
+          },
+          "hand_r": {
+            "sample_vertices": 63,
+            "same_bone_first_hit_fraction": 0.9682539682539683,
+            "inside_safe_frame_fraction": 1.0,
+            "player_first_hit_fraction": 0.0,
+            "screen_bounds_normalized": {
+              "x": [
+                0.3956005871295929,
+                0.43298664689064026
+              ],
+              "y": [
+                0.5544624924659729,
+                0.6271188855171204
+              ]
+            }
+          }
+        }
+      },
+      {
+        "actor": "player",
+        "clip": "Straight_R",
+        "normalized_time": 0.4,
+        "groups": {
+          "head": {
+            "sample_vertices": 47,
+            "same_bone_first_hit_fraction": 0.8723404255319149,
+            "inside_safe_frame_fraction": 1.0,
+            "player_first_hit_fraction": 0.0,
+            "screen_bounds_normalized": {
+              "x": [
+                0.47172680497169495,
+                0.5231388807296753
+              ],
+              "y": [
+                0.5652657151222229,
+                0.6447495818138123
+              ]
+            }
+          },
+          "hand_l": {
+            "sample_vertices": 63,
+            "same_bone_first_hit_fraction": 0.9365079365079365,
+            "inside_safe_frame_fraction": 1.0,
+            "player_first_hit_fraction": 0.0,
+            "screen_bounds_normalized": {
+              "x": [
+                0.5219960808753967,
+                0.5577917098999023
+              ],
+              "y": [
+                0.5393838286399841,
+                0.6164162158966064
+              ]
+            }
+          },
+          "hand_r": {
+            "sample_vertices": 63,
+            "same_bone_first_hit_fraction": 0.9682539682539683,
+            "inside_safe_frame_fraction": 1.0,
+            "player_first_hit_fraction": 0.0,
+            "screen_bounds_normalized": {
+              "x": [
+                0.3956005871295929,
+                0.43298664689064026
+              ],
+              "y": [
+                0.5544624924659729,
+                0.6271188855171204
+              ]
+            }
+          }
+        }
+      },
+      {
+        "actor": "player",
+        "clip": "Straight_R",
+        "normalized_time": 0.8,
+        "groups": {
+          "head": {
+            "sample_vertices": 47,
+            "same_bone_first_hit_fraction": 0.8085106382978723,
+            "inside_safe_frame_fraction": 1.0,
+            "player_first_hit_fraction": 0.06382978723404255,
+            "screen_bounds_normalized": {
+              "x": [
+                0.47172680497169495,
+                0.5231388807296753
+              ],
+              "y": [
+                0.5652657151222229,
+                0.6447495818138123
+              ]
+            }
+          },
+          "hand_l": {
+            "sample_vertices": 63,
+            "same_bone_first_hit_fraction": 0.9365079365079365,
+            "inside_safe_frame_fraction": 1.0,
+            "player_first_hit_fraction": 0.0,
+            "screen_bounds_normalized": {
+              "x": [
+                0.5219960808753967,
+                0.5577917098999023
+              ],
+              "y": [
+                0.5393838286399841,
+                0.6164162158966064
+              ]
+            }
+          },
+          "hand_r": {
+            "sample_vertices": 63,
+            "same_bone_first_hit_fraction": 0.9682539682539683,
+            "inside_safe_frame_fraction": 1.0,
+            "player_first_hit_fraction": 0.0,
+            "screen_bounds_normalized": {
+              "x": [
+                0.3956005871295929,
+                0.43298664689064026
+              ],
+              "y": [
+                0.5544624924659729,
+                0.6271188855171204
+              ]
+            }
+          }
+        }
+      },
+      {
+        "actor": "player",
+        "clip": "Dodge_L",
+        "normalized_time": 0.5,
+        "groups": {
+          "head": {
+            "sample_vertices": 47,
+            "same_bone_first_hit_fraction": 0.8085106382978723,
+            "inside_safe_frame_fraction": 1.0,
+            "player_first_hit_fraction": 0.0851063829787234,
+            "screen_bounds_normalized": {
+              "x": [
+                0.47172680497169495,
+                0.5231388807296753
+              ],
+              "y": [
+                0.5652657151222229,
+                0.6447495818138123
+              ]
+            }
+          },
+          "hand_l": {
+            "sample_vertices": 63,
+            "same_bone_first_hit_fraction": 0.9365079365079365,
+            "inside_safe_frame_fraction": 1.0,
+            "player_first_hit_fraction": 0.0,
+            "screen_bounds_normalized": {
+              "x": [
+                0.5219960808753967,
+                0.5577917098999023
+              ],
+              "y": [
+                0.5393838286399841,
+                0.6164162158966064
+              ]
+            }
+          },
+          "hand_r": {
+            "sample_vertices": 63,
+            "same_bone_first_hit_fraction": 0.9682539682539683,
+            "inside_safe_frame_fraction": 1.0,
+            "player_first_hit_fraction": 0.0,
+            "screen_bounds_normalized": {
+              "x": [
+                0.3956005871295929,
+                0.43298664689064026
+              ],
+              "y": [
+                0.5544624924659729,
+                0.6271188855171204
+              ]
+            }
+          }
+        }
+      },
+      {
+        "actor": "player",
+        "clip": "Dodge_R",
+        "normalized_time": 0.5,
+        "groups": {
+          "head": {
+            "sample_vertices": 47,
+            "same_bone_first_hit_fraction": 0.8723404255319149,
+            "inside_safe_frame_fraction": 1.0,
+            "player_first_hit_fraction": 0.0,
+            "screen_bounds_normalized": {
+              "x": [
+                0.47172680497169495,
+                0.5231388807296753
+              ],
+              "y": [
+                0.5652657151222229,
+                0.6447495818138123
+              ]
+            }
+          },
+          "hand_l": {
+            "sample_vertices": 63,
+            "same_bone_first_hit_fraction": 0.9047619047619048,
+            "inside_safe_frame_fraction": 1.0,
+            "player_first_hit_fraction": 0.031746031746031744,
+            "screen_bounds_normalized": {
+              "x": [
+                0.5219960808753967,
+                0.5577917098999023
+              ],
+              "y": [
+                0.5393838286399841,
+                0.6164162158966064
+              ]
+            }
+          },
+          "hand_r": {
+            "sample_vertices": 63,
+            "same_bone_first_hit_fraction": 0.9523809523809523,
+            "inside_safe_frame_fraction": 1.0,
+            "player_first_hit_fraction": 0.015873015873015872,
+            "screen_bounds_normalized": {
+              "x": [
+                0.3956005871295929,
+                0.43298664689064026
+              ],
+              "y": [
+                0.5544624924659729,
+                0.6271188855171204
+              ]
+            }
+          }
+        }
+      }
+    ],
+    "combat_readability_approved": false,
+    "limitations": [
+      "Sparse vertex rays do not measure visible pixel area",
+      "A guard hand overlaps a straight attack in the peak preview",
+      "Fixed distance and Blender art poses only; no tracking, follow/collision or simultaneous actions",
+      "Low-contrast, aspect ratios, actual hit windows and HUD overlap await Unreal review"
+    ]
+  },
+  "unreal_verified": false,
+  "windows_verified": false
+}

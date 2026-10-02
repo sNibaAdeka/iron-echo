@@ -40,6 +40,20 @@ def main():
         stats = robot['stats']
         if stats['triangles']>=25000 or stats['unweighted_vertices']!=0:
             raise RuntimeError('Reported robot budget/weights violated: '+robot['id'])
+    arena_root=export/'arena'
+    arena=json.loads((arena_root/'arena_manifest.json').read_text(encoding='utf-8'))
+    arena_fbx=(arena_root/arena['fbx']).resolve();arena_fbx.relative_to(arena_root.resolve())
+    arena_blend=(root/arena['blend']).resolve();arena_blend.relative_to(root.resolve())
+    for path,expected in ((arena_fbx,arena['sha256']),(arena_blend,arena['blend_sha256'])):
+        if hashlib.sha256(path.read_bytes()).hexdigest()!=expected:
+            raise RuntimeError('Arena source checksum mismatch: '+str(path.relative_to(root)))
+    if arena['robot_source_sha256']!=hashes or not 0<arena['triangles']<80000:
+        raise RuntimeError('Arena geometry budget/source robot snapshot differs')
+    if len(arena['material_names'])!=8 or set(arena['material_names'])!=set(arena['material_specs']):
+        raise RuntimeError('Arena material specification differs from slots')
+    for filename in arena['preview_files']:
+        path=(root/filename).resolve();path.relative_to(root.resolve())
+        if not path.is_file():raise RuntimeError('Arena preview missing: '+filename)
     for name in ('AGENTS.md','CLAUDE.md','PROJECT_STATE.md','WINDOWS_START.md'):
         if not (root/name).is_file():
             raise RuntimeError('Continuation document missing: '+name)
@@ -53,6 +67,7 @@ def main():
         raise RuntimeError('Generated native theme missing')
     print('PASS: {} Python files parsed; {} FBX hashes verified; continuation documents present'.format(len(scripts),len(hashes)))
     print('PASS: {} additional LOD FBX and {} texture hashes/source snapshots verified'.format(extra_fbx,texture_count))
+    print('PASS: arena FBX/.blend hashes, geometry budget, material names and robot snapshot verified')
     print('PASS: plugin JSON and declared module files present; C++ compilation NOT performed')
     print('Scope: source package integrity only. Unreal/Windows runtime remains unverified.')
 

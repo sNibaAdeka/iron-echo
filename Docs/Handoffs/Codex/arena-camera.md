@@ -1,0 +1,13 @@
+# Передача Opus — арена и камера 0.4
+
+Задача: IE-ART-ARENA-CAMERA. Дата: 2026-10-02. Git snapshot: **codex-art-v0.4**. Asset contract IE-VIS-DRAFT-0.1 и presentation adapter IE-PRESENT-DRAFT-0.1 остаются неподтверждёнными. Протокол позы, тайминги/правила боя, скелет и исходные десять FBX не изменены.
+
+Файлы: ArtSource/Blender/Arena/industrial_arena.blend; ArtSource/exports/arena/{industrial_arena.fbx,arena_manifest.json}; Tools/Blender/{build_arena_review.py,verify_arena_review.py}; Tools/Unreal/Art/import_arena_source.py; Docs/Art/{ARENA_GUIDE.md,ARENA_SOURCE_REPORT.json,ARENA_QA_REPORT.json}; три Previews/arena-*.png. Portable Tools/QA/verify_package.py дополнен проверкой арены. README/Art direction/последний Codex status указывают новую поставку.
+
+Реальный результат: оригинальная arena geometry, 4 180 triangles/2 280 vertices/8 slots, Blender material lookdev и три рендера. Actual QA **61/61**: обратный импорт static FBX, dimensions/material/UV проверки, переносимость image references и 17 camera pose cases. Исправлено схлопывание фасок тонких дверей; экспорт не содержит вырожденных треугольников. Подробные pass/fail и sparse ray fractions находятся в ARENA_QA_REPORT.json. Это не Unreal PASS и не pixel visibility coverage. На пике прямого удара рука частично перекрывается защитой игрока; combat_readability_approved=false.
+
+На Windows после базового UE setup выполнить import_arena_source.main([]), затем main(['--apply']) по ARENA_GUIDE. Детерминированный destination /Game/Art/IronEcho/Arena/SM_IE_IndustrialArena. Повторный импорт допускается только после исключительной передачи binary writing ownership. Отчёт Saved/IronEchoArtReports/import_arena_source.json приложить к интеграционной проверке; при исключении частично созданные ассеты остаются для осмотра, автоматического удаления нет.
+
+Importer не меняет уровень или gameplay и не создаёт collision. Source только single joined art mesh; physics floor/ring bounds/Camera channel принадлежат интегратору. Blender procedural micro-noise в Unreal не перенесён. Camera parameters описаны в Blender world space; они служат композицией для дальнейшего UE lookdev и не заменяют настройки существующего unbuilt follow camera.
+
+Следующий обязательный шаг Codex при доступе к UE: импорт, scale/axis/material/lighting review, сопоставление с runtime camera, одновременные атаки/уклоны и коррекция реальных перекрытий. Затем следует actor entrance и проверка визуальной части в полной сборке. Opus ведёт общий PROJECT_STATE.md после приёма этой передачи. UE, сборка плагина, runtime IK и RTX 3050 profiling по-прежнему не выполнены.

@@ -2,9 +2,11 @@
 
 Оригинальный бокс роботов с управлением движениями человека через камеру. Unreal Engine + Blender + MediaPipe. Codex отвечает за графику; Claude Opus 5.5 — за технический проект, трекинг, игровой бой, интеграцию и сборки.
 
-**Последняя графическая поставка — 0.3:** запечённые PBR-текстуры и две облегчённые модели каждого бойца. Они созданы и проверены в Blender 4.5.7 LTS. Исходники UMG/камеры/VFX 0.2-draft и editor-скрипты Unreal подготовлены, но **в движке ещё не запускались**. .uproject, MediaPipe runtime и законченного боя в репозитории пока нет.
+**Последняя графическая поставка — 0.4:** оригинальная промышленная арена, свет и offline камера боя; перед ней 0.3 добавила запечённые PBR-текстуры и две облегчённые модели каждого бойца. Ассеты созданы и проверены в Blender 4.5.7 LTS. Исходники UMG/камеры/VFX 0.2-draft и editor-скрипты Unreal подготовлены, но **в движке ещё не запускались**. .uproject, MediaPipe runtime и законченного боя в репозитории пока нет.
 
 ![Запечённые материалы — настоящий Blender-рендер, не скриншот игры](Previews/robots-textured-studio.png)
+
+![Арена и композиция камеры — настоящий Blender-рендер](Previews/arena-shoulder.png)
 
 ## Продолжение на Windows
 
@@ -27,6 +29,7 @@ cd iron-echo
 - Шесть собственных PBR PNG 2048²: BaseColor, ORM и tangent Normal на каждого робота.
 - Дополнение 0.3: **84/84 проверок Blender**, включая FBX round trips, жёстких весов и положений суставов, UV и внешних ссылок на текстуры.
 - Три новых offline Blender renders: материалы и два LOD comparisons.
+- Арена 0.4: оригинальная геометрия 4 180 triangles/8 slots, переносимая .blend/static FBX и три ракурса. **61/61 Blender checks**, включая actual round trip и 17 pose diagnostics, находятся в ARENA_QA_REPORT; приёмка читаемости боя ещё открыта.
 - UI-источники: семантическая тема,9 SVG-иконок, 6 макетов; offline contrast/layout/icon checks 17/6/9.
 
 Это проверки ассетов и источников, а не подтверждение FPS, UMG, IK или camera tracking в игре. Модели остаются первой технической художественной итерацией; качество крупной студии не заявлено.
@@ -35,8 +38,8 @@ cd iron-echo
 
 | Папка | Содержимое |
 |---|---|
-| ArtSource/Blender | Базовые модели, LOD и textured lookdev scenes |
-| ArtSource/exports | Base FBX, 8 animation FBX, 4 LOD FBX и manifests |
+| ArtSource/Blender | Базовые модели, LOD, textured lookdev и arena scenes |
+| ArtSource/exports | Base FBX, 8 animation FBX, 4 LOD FBX, static arena FBX и manifests |
 | ArtSource/Textures/robots | 6 PBR PNG и texture manifest |
 | ArtSource/UI | Тема, SVG icons и UI mockups |
 | Tools/Blender | Воспроизводимые генераторы, bake, render и actual Blender QA |
@@ -47,7 +50,7 @@ cd iron-echo
 | Docs/Handoffs/Codex | Последний статус и передачи интегратору |
 | Docs/Briefs | Большой промт, разделение работы и стартовые задания |
 
-Интеграция 0.3: [SURFACE_LOD_GUIDE.md](Docs/Art/SURFACE_LOD_GUIDE.md) и [передача Opus](Docs/Handoffs/Codex/surface-lods.md). Runtime 0.2: [README плагина](IntegrationDraft/IronEchoVisuals/README.md). У бинарных файлов один автор в момент записи.
+Арена 0.4: [ARENA_GUIDE.md](Docs/Art/ARENA_GUIDE.md) и [передача Opus](Docs/Handoffs/Codex/arena-camera.md). Материалы/LOD 0.3: [SURFACE_LOD_GUIDE.md](Docs/Art/SURFACE_LOD_GUIDE.md) и [передача](Docs/Handoffs/Codex/surface-lods.md). Runtime 0.2: [README плагина](IntegrationDraft/IronEchoVisuals/README.md). У бинарных файлов один автор в момент записи.
 
 ## Проверка без Unreal
 
