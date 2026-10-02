@@ -1,0 +1,167 @@
+{
+  "schema": "iron-echo-lod/0.1",
+  "contract_version": "IE-VIS-DRAFT-0.1",
+  "blender_version": "4.5.7 LTS",
+  "generator": "Tools/Blender/build_lods.py",
+  "source_base_sha256": {
+    "vanguard.fbx": "e43dc598814f72e23324704dba7ad6074de18029cab34dd35dd7970094b7ad57",
+    "bulwark.fbx": "fcb9803d36071db362e13d82f55e75e543a864f236f885260305b359f605abe7",
+    "animations/Dodge_L.fbx": "446b7f54f62e679a09de7621bf96c744722ee8f5b4ca8b6e2ff9afa13f596b78",
+    "animations/Straight_L.fbx": "83b14b5d9c444a050c34877bc2e810cc30801f31186866b12b92eec89c40b1bc",
+    "animations/Guard.fbx": "d9c0de06b76f0c4510bd6ddbe0abc889ee6f76bf5220b05db1ec7151e5a15db9",
+    "animations/Idle.fbx": "37b2a4a88d44423c0f5368f62ef72928ca6329822d40d47b47cbc12dc8680d83",
+    "animations/Straight_R.fbx": "5cb47f504d45877227047ee9ffbd1a1b236961c6db28d0e4522ef1367c3d8b05",
+    "animations/KO.fbx": "b79ade7a99197c503ff1dda009733c05c354455543012ed3d57d4f90d1e2bfcd",
+    "animations/HitReact.fbx": "6c18260791f3f61ae40ec865977062150b23466e7caf4ea7be0b8bba7435b286",
+    "animations/Dodge_R.fbx": "9f741cf3ec4fb488dee8a7eadf6f0fb0164dbfa65581825c6edc37efe47ae8e0"
+  },
+  "unreal_verified": false,
+  "robots": [
+    {
+      "id": "vanguard",
+      "lod0": {
+        "vertices": 4864,
+        "triangles": 9432,
+        "rigid_weights": true,
+        "uv_layers": 1,
+        "materials": [
+          "Gunmetal",
+          "Armor",
+          "Brass",
+          "Rubber",
+          "Signal"
+        ]
+      },
+      "levels": [
+        {
+          "index": 1,
+          "fbx": "vanguard_LOD1.fbx",
+          "requested_ratio": 0.6,
+          "actual_ratio": 0.5998727735368957,
+          "stats": {
+            "vertices": 2977,
+            "triangles": 5658,
+            "rigid_weights": true,
+            "uv_layers": 1,
+            "materials": [
+              "Gunmetal",
+              "Armor",
+              "Brass",
+              "Rubber",
+              "Signal"
+            ]
+          },
+          "sampled_deviation": {
+            "samples": 5739,
+            "max_m": 0.0019759470596909523,
+            "p95_m": 0.0009696491761133075,
+            "mean_m": 0.00024348689355427547
+          },
+          "shape_budget_m": 0.035
+        },
+        {
+          "index": 2,
+          "fbx": "vanguard_LOD2.fbx",
+          "requested_ratio": 0.35,
+          "actual_ratio": 0.34987277353689566,
+          "stats": {
+            "vertices": 1798,
+            "triangles": 3300,
+            "rigid_weights": true,
+            "uv_layers": 1,
+            "materials": [
+              "Gunmetal",
+              "Armor",
+              "Brass",
+              "Rubber",
+              "Signal"
+            ]
+          },
+          "sampled_deviation": {
+            "samples": 5409,
+            "max_m": 0.004241769667714834,
+            "p95_m": 0.002318614162504673,
+            "mean_m": 0.0008910954440621584
+          },
+          "shape_budget_m": 0.07
+        }
+      ]
+    },
+    {
+      "id": "bulwark",
+      "lod0": {
+        "vertices": 4864,
+        "triangles": 9432,
+        "rigid_weights": true,
+        "uv_layers": 1,
+        "materials": [
+          "Gunmetal",
+          "Armor",
+          "Brass",
+          "Rubber",
+          "Signal"
+        ]
+      },
+      "levels": [
+        {
+          "index": 1,
+          "fbx": "bulwark_LOD1.fbx",
+          "requested_ratio": 0.6,
+          "actual_ratio": 0.5998727735368957,
+          "stats": {
+            "vertices": 2977,
+            "triangles": 5658,
+            "rigid_weights": true,
+            "uv_layers": 1,
+            "materials": [
+              "Gunmetal",
+              "Armor",
+              "Brass",
+              "Rubber",
+              "Signal"
+            ]
+          },
+          "sampled_deviation": {
+            "samples": 5739,
+            "max_m": 0.0019759470596909523,
+            "p95_m": 0.0009696491761133075,
+            "mean_m": 0.0002433228506101875
+          },
+          "shape_budget_m": 0.035
+        },
+        {
+          "index": 2,
+          "fbx": "bulwark_LOD2.fbx",
+          "requested_ratio": 0.35,
+          "actual_ratio": 0.34987277353689566,
+          "stats": {
+            "vertices": 1798,
+            "triangles": 3300,
+            "rigid_weights": true,
+            "uv_layers": 1,
+            "materials": [
+              "Gunmetal",
+              "Armor",
+              "Brass",
+              "Rubber",
+              "Signal"
+            ]
+          },
+          "sampled_deviation": {
+            "samples": 5409,
+            "max_m": 0.004241769667714834,
+            "p95_m": 0.0022825116757303476,
+            "mean_m": 0.000877034187066285
+          },
+          "shape_budget_m": 0.07
+        }
+      ]
+    }
+  ],
+  "files_sha256": {
+    "vanguard_LOD1.fbx": "4b21c6d6a21aa3130f8561913d6d9ef0c18705e59461849c8fb7d5fc15e94ccd",
+    "vanguard_LOD2.fbx": "87ce0dcafedb93b19c29aa4c0c9382629062ffef300e5a2e11f48368b25f5c7a",
+    "bulwark_LOD1.fbx": "1b77fa9424439b7dd6ad95d295800a50c8d0e902e2aa00f7e44dfd14b9a390c2",
+    "bulwark_LOD2.fbx": "df645d4d94f71af1996891ae648de93020598107d103c9011b1e03b8a24d15e1"
+  }
+}

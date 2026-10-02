@@ -24,6 +24,18 @@ def main():
         actual = hashlib.sha256(path.read_bytes()).hexdigest()
         if actual != expected:
             raise RuntimeError('FBX checksum mismatch: '+relative)
+    extra_fbx=0
+    texture_count=0
+    for quality_root, filename, kind in ((export/'lods','lod_manifest.json','lod'),(root/'ArtSource/Textures/robots','texture_manifest.json','texture')):
+        quality=json.loads((quality_root/filename).read_text(encoding='utf-8'))
+        if quality['source_base_sha256']!=hashes or quality['contract_version']!=manifest['contract_version']:
+            raise RuntimeError('Quality package source snapshot differs from the base: '+kind)
+        for relative,expected in quality['files_sha256'].items():
+            path=(quality_root/relative).resolve();path.relative_to(quality_root.resolve())
+            if hashlib.sha256(path.read_bytes()).hexdigest()!=expected:
+                raise RuntimeError('Quality checksum mismatch: '+relative)
+            if kind=='lod':extra_fbx+=1
+            else:texture_count+=1
     for robot in manifest['robots']:
         stats = robot['stats']
         if stats['triangles']>=25000 or stats['unweighted_vertices']!=0:
@@ -40,6 +52,7 @@ def main():
     if not (plugin/'Source/IronEchoVisuals/Public/IETheme.h').is_file():
         raise RuntimeError('Generated native theme missing')
     print('PASS: {} Python files parsed; {} FBX hashes verified; continuation documents present'.format(len(scripts),len(hashes)))
+    print('PASS: {} additional LOD FBX and {} texture hashes/source snapshots verified'.format(extra_fbx,texture_count))
     print('PASS: plugin JSON and declared module files present; C++ compilation NOT performed')
     print('Scope: source package integrity only. Unreal/Windows runtime remains unverified.')
 

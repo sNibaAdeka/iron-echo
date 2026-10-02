@@ -1,0 +1,28 @@
+{
+  "scope": "Actual offline Blender renders, not Unreal screenshots",
+  "blender_version": "4.5.7 LTS",
+  "previews": [
+    {
+      "file": "Previews/robots-textured-studio.png",
+      "geometry_screen_bounds": {
+        "x": [
+          0.18363749980926514,
+          0.7751710414886475
+        ],
+        "y": [
+          0.09985586255788803,
+          0.8957369327545166
+        ]
+      }
+    },
+    {
+      "file": "Previews/vanguard-lod-comparison.png",
+      "pose": "Guard identical on all levels"
+    },
+    {
+      "file": "Previews/bulwark-lod-comparison.png",
+      "pose": "Guard identical on all levels"
+    }
+  ],
+  "unreal_verified": false
+}

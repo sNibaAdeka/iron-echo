@@ -1,0 +1,101 @@
+{
+  "schema": "iron-echo-pbr-atlas/0.1",
+  "generator": "Tools/Blender/build_surface_atlases.py",
+  "contract_version": "IE-VIS-DRAFT-0.1",
+  "blender_version": "4.5.7 LTS",
+  "resolution": 2048,
+  "source_base_sha256": {
+    "vanguard.fbx": "e43dc598814f72e23324704dba7ad6074de18029cab34dd35dd7970094b7ad57",
+    "bulwark.fbx": "fcb9803d36071db362e13d82f55e75e543a864f236f885260305b359f605abe7",
+    "animations/Dodge_L.fbx": "446b7f54f62e679a09de7621bf96c744722ee8f5b4ca8b6e2ff9afa13f596b78",
+    "animations/Straight_L.fbx": "83b14b5d9c444a050c34877bc2e810cc30801f31186866b12b92eec89c40b1bc",
+    "animations/Guard.fbx": "d9c0de06b76f0c4510bd6ddbe0abc889ee6f76bf5220b05db1ec7151e5a15db9",
+    "animations/Idle.fbx": "37b2a4a88d44423c0f5368f62ef72928ca6329822d40d47b47cbc12dc8680d83",
+    "animations/Straight_R.fbx": "5cb47f504d45877227047ee9ffbd1a1b236961c6db28d0e4522ef1367c3d8b05",
+    "animations/KO.fbx": "b79ade7a99197c503ff1dda009733c05c354455543012ed3d57d4f90d1e2bfcd",
+    "animations/HitReact.fbx": "6c18260791f3f61ae40ec865977062150b23466e7caf4ea7be0b8bba7435b286",
+    "animations/Dodge_R.fbx": "9f741cf3ec4fb488dee8a7eadf6f0fb0164dbfa65581825c6edc37efe47ae8e0"
+  },
+  "robots": [
+    {
+      "id": "vanguard",
+      "textures": [
+        {
+          "semantic": "base",
+          "file": "vanguard/T_IE_vanguard_BaseColor.png",
+          "srgb": true,
+          "flip_green": false
+        },
+        {
+          "semantic": "orm",
+          "file": "vanguard/T_IE_vanguard_ORM.png",
+          "srgb": false,
+          "flip_green": false
+        },
+        {
+          "semantic": "normal",
+          "file": "vanguard/T_IE_vanguard_Normal.png",
+          "srgb": false,
+          "flip_green": true
+        }
+      ],
+      "slots": [
+        "Gunmetal",
+        "Armor",
+        "Brass",
+        "Rubber",
+        "Signal"
+      ]
+    },
+    {
+      "id": "bulwark",
+      "textures": [
+        {
+          "semantic": "base",
+          "file": "bulwark/T_IE_bulwark_BaseColor.png",
+          "srgb": true,
+          "flip_green": false
+        },
+        {
+          "semantic": "orm",
+          "file": "bulwark/T_IE_bulwark_ORM.png",
+          "srgb": false,
+          "flip_green": false
+        },
+        {
+          "semantic": "normal",
+          "file": "bulwark/T_IE_bulwark_Normal.png",
+          "srgb": false,
+          "flip_green": true
+        }
+      ],
+      "slots": [
+        "Gunmetal",
+        "Armor",
+        "Brass",
+        "Rubber",
+        "Signal"
+      ]
+    }
+  ],
+  "files_sha256": {
+    "vanguard/T_IE_vanguard_BaseColor.png": "abd5fec433a341e1f2f03209046cc72e5e30d0340fb0395bf415c36032788b57",
+    "vanguard/T_IE_vanguard_ORM.png": "d7e954f76bdc7e3c3fc2b4fe8188ce7f67687b77c07dec541fd9b89075b3c07f",
+    "vanguard/T_IE_vanguard_Normal.png": "6ef6a34a50ed076a530cbac01f66c97d81a395331ed257656996e763d06ce380",
+    "bulwark/T_IE_bulwark_BaseColor.png": "2fabe7c509960b2ee4454de7b5e13a6215f27f130629e10cb8df0486569e8544",
+    "bulwark/T_IE_bulwark_ORM.png": "19b00de80914b643968d44caf232661d5ccd14b9a070b4fb3dd613db7b3df5a1",
+    "bulwark/T_IE_bulwark_Normal.png": "967db1c4b60b54bd7b602d803756083e9d30f45ebafbde00f3acb5eec94abb84"
+  },
+  "orm_channels": {
+    "R": "AO constant 1 (no pose-dependent AO baked)",
+    "G": "roughness",
+    "B": "metallic"
+  },
+  "normal_space": "tangent OpenGL +Y; Unreal flip_green_channel=true",
+  "unreal_verified": false,
+  "limitations": [
+    "Pointiness-based wear is static cosmetic lookdev, not gameplay damage",
+    "UV/tangent consistency on reduced LODs requires Unreal visual checks",
+    "Textures are original procedural outputs; no external assets"
+  ]
+}

@@ -1,0 +1,692 @@
+{
+  "scope": "Blender actual FBX round trips and reopened external atlas/UV data; not UE runtime",
+  "blender_version": "4.5.7 LTS",
+  "checks": [
+    {
+      "name": "lod_hash_vanguard_LOD1.fbx",
+      "passed": true,
+      "evidence": "vanguard_LOD1.fbx"
+    },
+    {
+      "name": "lod_hash_vanguard_LOD2.fbx",
+      "passed": true,
+      "evidence": "vanguard_LOD2.fbx"
+    },
+    {
+      "name": "lod_hash_bulwark_LOD1.fbx",
+      "passed": true,
+      "evidence": "bulwark_LOD1.fbx"
+    },
+    {
+      "name": "lod_hash_bulwark_LOD2.fbx",
+      "passed": true,
+      "evidence": "bulwark_LOD2.fbx"
+    },
+    {
+      "name": "texture_hash_vanguard/T_IE_vanguard_BaseColor.png",
+      "passed": true,
+      "evidence": "vanguard/T_IE_vanguard_BaseColor.png"
+    },
+    {
+      "name": "texture_hash_vanguard/T_IE_vanguard_ORM.png",
+      "passed": true,
+      "evidence": "vanguard/T_IE_vanguard_ORM.png"
+    },
+    {
+      "name": "texture_hash_vanguard/T_IE_vanguard_Normal.png",
+      "passed": true,
+      "evidence": "vanguard/T_IE_vanguard_Normal.png"
+    },
+    {
+      "name": "texture_hash_bulwark/T_IE_bulwark_BaseColor.png",
+      "passed": true,
+      "evidence": "bulwark/T_IE_bulwark_BaseColor.png"
+    },
+    {
+      "name": "texture_hash_bulwark/T_IE_bulwark_ORM.png",
+      "passed": true,
+      "evidence": "bulwark/T_IE_bulwark_ORM.png"
+    },
+    {
+      "name": "texture_hash_bulwark/T_IE_bulwark_Normal.png",
+      "passed": true,
+      "evidence": "bulwark/T_IE_bulwark_Normal.png"
+    },
+    {
+      "name": "base_unchanged_vanguard.fbx",
+      "passed": true,
+      "evidence": "vanguard.fbx"
+    },
+    {
+      "name": "base_unchanged_bulwark.fbx",
+      "passed": true,
+      "evidence": "bulwark.fbx"
+    },
+    {
+      "name": "base_unchanged_animations/Dodge_L.fbx",
+      "passed": true,
+      "evidence": "animations/Dodge_L.fbx"
+    },
+    {
+      "name": "base_unchanged_animations/Straight_L.fbx",
+      "passed": true,
+      "evidence": "animations/Straight_L.fbx"
+    },
+    {
+      "name": "base_unchanged_animations/Guard.fbx",
+      "passed": true,
+      "evidence": "animations/Guard.fbx"
+    },
+    {
+      "name": "base_unchanged_animations/Idle.fbx",
+      "passed": true,
+      "evidence": "animations/Idle.fbx"
+    },
+    {
+      "name": "base_unchanged_animations/Straight_R.fbx",
+      "passed": true,
+      "evidence": "animations/Straight_R.fbx"
+    },
+    {
+      "name": "base_unchanged_animations/KO.fbx",
+      "passed": true,
+      "evidence": "animations/KO.fbx"
+    },
+    {
+      "name": "base_unchanged_animations/HitReact.fbx",
+      "passed": true,
+      "evidence": "animations/HitReact.fbx"
+    },
+    {
+      "name": "base_unchanged_animations/Dodge_R.fbx",
+      "passed": true,
+      "evidence": "animations/Dodge_R.fbx"
+    },
+    {
+      "name": "vanguard_LOD1_triangles",
+      "passed": true,
+      "evidence": 5658
+    },
+    {
+      "name": "vanguard_LOD1_bones",
+      "passed": true,
+      "evidence": [
+        "root",
+        "pelvis",
+        "spine_01",
+        "chest",
+        "neck",
+        "head",
+        "clavicle_l",
+        "upperarm_l",
+        "lowerarm_l",
+        "hand_l",
+        "clavicle_r",
+        "upperarm_r",
+        "lowerarm_r",
+        "hand_r",
+        "thigh_l",
+        "calf_l",
+        "foot_l",
+        "thigh_r",
+        "calf_r",
+        "foot_r"
+      ]
+    },
+    {
+      "name": "vanguard_LOD1_rest_joint_positions",
+      "passed": true,
+      "evidence": {
+        "root": 0.0,
+        "pelvis": 0.0,
+        "spine_01": 0.0,
+        "chest": 0.0,
+        "neck": 1.1920928955078125e-07,
+        "head": 0.0,
+        "clavicle_l": 1.1920928955078125e-07,
+        "upperarm_l": 1.3328003749250123e-07,
+        "lowerarm_l": 2.150182418525709e-07,
+        "hand_l": 2.4027400458748785e-07,
+        "clavicle_r": 1.1920928955078125e-07,
+        "upperarm_r": 1.3328003749250123e-07,
+        "lowerarm_r": 2.150182418525709e-07,
+        "hand_r": 2.4027400458748785e-07,
+        "thigh_l": 1.4901161193847656e-08,
+        "calf_l": 1.4901161193847656e-08,
+        "foot_l": 8.429369702178807e-08,
+        "thigh_r": 1.4901161193847656e-08,
+        "calf_r": 1.4901161193847656e-08,
+        "foot_r": 8.429369702178807e-08
+      }
+    },
+    {
+      "name": "vanguard_LOD1_rigid_weights",
+      "passed": true,
+      "evidence": 2977
+    },
+    {
+      "name": "vanguard_LOD1_slots",
+      "passed": true,
+      "evidence": [
+        "Gunmetal",
+        "Armor",
+        "Brass",
+        "Rubber",
+        "Signal"
+      ]
+    },
+    {
+      "name": "vanguard_LOD1_uv",
+      "passed": true,
+      "evidence": 1
+    },
+    {
+      "name": "vanguard_LOD1_armature",
+      "passed": true,
+      "evidence": [
+        "ARMATURE"
+      ]
+    },
+    {
+      "name": "vanguard_LOD1_rigid_panel_motion",
+      "passed": true,
+      "evidence": {
+        "bone_groups_tested": 19,
+        "max_distance_error_m": 2.7578855366083843e-08
+      }
+    },
+    {
+      "name": "vanguard_LOD2_triangles",
+      "passed": true,
+      "evidence": 3300
+    },
+    {
+      "name": "vanguard_LOD2_bones",
+      "passed": true,
+      "evidence": [
+        "root",
+        "pelvis",
+        "spine_01",
+        "chest",
+        "neck",
+        "head",
+        "clavicle_l",
+        "upperarm_l",
+        "lowerarm_l",
+        "hand_l",
+        "clavicle_r",
+        "upperarm_r",
+        "lowerarm_r",
+        "hand_r",
+        "thigh_l",
+        "calf_l",
+        "foot_l",
+        "thigh_r",
+        "calf_r",
+        "foot_r"
+      ]
+    },
+    {
+      "name": "vanguard_LOD2_rest_joint_positions",
+      "passed": true,
+      "evidence": {
+        "root": 0.0,
+        "pelvis": 0.0,
+        "spine_01": 0.0,
+        "chest": 0.0,
+        "neck": 1.1920928955078125e-07,
+        "head": 0.0,
+        "clavicle_l": 1.1920928955078125e-07,
+        "upperarm_l": 1.3328003749250123e-07,
+        "lowerarm_l": 2.150182418525709e-07,
+        "hand_l": 2.4027400458748785e-07,
+        "clavicle_r": 1.1920928955078125e-07,
+        "upperarm_r": 1.3328003749250123e-07,
+        "lowerarm_r": 2.150182418525709e-07,
+        "hand_r": 2.4027400458748785e-07,
+        "thigh_l": 1.4901161193847656e-08,
+        "calf_l": 1.4901161193847656e-08,
+        "foot_l": 8.429369702178807e-08,
+        "thigh_r": 1.4901161193847656e-08,
+        "calf_r": 1.4901161193847656e-08,
+        "foot_r": 8.429369702178807e-08
+      }
+    },
+    {
+      "name": "vanguard_LOD2_rigid_weights",
+      "passed": true,
+      "evidence": 1798
+    },
+    {
+      "name": "vanguard_LOD2_slots",
+      "passed": true,
+      "evidence": [
+        "Gunmetal",
+        "Armor",
+        "Brass",
+        "Rubber",
+        "Signal"
+      ]
+    },
+    {
+      "name": "vanguard_LOD2_uv",
+      "passed": true,
+      "evidence": 1
+    },
+    {
+      "name": "vanguard_LOD2_armature",
+      "passed": true,
+      "evidence": [
+        "ARMATURE"
+      ]
+    },
+    {
+      "name": "vanguard_LOD2_rigid_panel_motion",
+      "passed": true,
+      "evidence": {
+        "bone_groups_tested": 19,
+        "max_distance_error_m": 7.833342974272739e-08
+      }
+    },
+    {
+      "name": "bulwark_LOD1_triangles",
+      "passed": true,
+      "evidence": 5658
+    },
+    {
+      "name": "bulwark_LOD1_bones",
+      "passed": true,
+      "evidence": [
+        "root",
+        "pelvis",
+        "spine_01",
+        "chest",
+        "neck",
+        "head",
+        "clavicle_l",
+        "upperarm_l",
+        "lowerarm_l",
+        "hand_l",
+        "clavicle_r",
+        "upperarm_r",
+        "lowerarm_r",
+        "hand_r",
+        "thigh_l",
+        "calf_l",
+        "foot_l",
+        "thigh_r",
+        "calf_r",
+        "foot_r"
+      ]
+    },
+    {
+      "name": "bulwark_LOD1_rest_joint_positions",
+      "passed": true,
+      "evidence": {
+        "root": 0.0,
+        "pelvis": 0.0,
+        "spine_01": 0.0,
+        "chest": 0.0,
+        "neck": 1.1920928955078125e-07,
+        "head": 0.0,
+        "clavicle_l": 1.1920928955078125e-07,
+        "upperarm_l": 1.3328003749250123e-07,
+        "lowerarm_l": 2.150182418525709e-07,
+        "hand_l": 2.4027400458748785e-07,
+        "clavicle_r": 1.1920928955078125e-07,
+        "upperarm_r": 1.3328003749250123e-07,
+        "lowerarm_r": 2.150182418525709e-07,
+        "hand_r": 2.4027400458748785e-07,
+        "thigh_l": 1.4901161193847656e-08,
+        "calf_l": 1.4901161193847656e-08,
+        "foot_l": 8.429369702178807e-08,
+        "thigh_r": 1.4901161193847656e-08,
+        "calf_r": 1.4901161193847656e-08,
+        "foot_r": 8.429369702178807e-08
+      }
+    },
+    {
+      "name": "bulwark_LOD1_rigid_weights",
+      "passed": true,
+      "evidence": 2977
+    },
+    {
+      "name": "bulwark_LOD1_slots",
+      "passed": true,
+      "evidence": [
+        "Gunmetal",
+        "Armor",
+        "Brass",
+        "Rubber",
+        "Signal"
+      ]
+    },
+    {
+      "name": "bulwark_LOD1_uv",
+      "passed": true,
+      "evidence": 1
+    },
+    {
+      "name": "bulwark_LOD1_armature",
+      "passed": true,
+      "evidence": [
+        "ARMATURE"
+      ]
+    },
+    {
+      "name": "bulwark_LOD1_rigid_panel_motion",
+      "passed": true,
+      "evidence": {
+        "bone_groups_tested": 19,
+        "max_distance_error_m": 2.7578855366083843e-08
+      }
+    },
+    {
+      "name": "bulwark_LOD2_triangles",
+      "passed": true,
+      "evidence": 3300
+    },
+    {
+      "name": "bulwark_LOD2_bones",
+      "passed": true,
+      "evidence": [
+        "root",
+        "pelvis",
+        "spine_01",
+        "chest",
+        "neck",
+        "head",
+        "clavicle_l",
+        "upperarm_l",
+        "lowerarm_l",
+        "hand_l",
+        "clavicle_r",
+        "upperarm_r",
+        "lowerarm_r",
+        "hand_r",
+        "thigh_l",
+        "calf_l",
+        "foot_l",
+        "thigh_r",
+        "calf_r",
+        "foot_r"
+      ]
+    },
+    {
+      "name": "bulwark_LOD2_rest_joint_positions",
+      "passed": true,
+      "evidence": {
+        "root": 0.0,
+        "pelvis": 0.0,
+        "spine_01": 0.0,
+        "chest": 0.0,
+        "neck": 1.1920928955078125e-07,
+        "head": 0.0,
+        "clavicle_l": 1.1920928955078125e-07,
+        "upperarm_l": 1.3328003749250123e-07,
+        "lowerarm_l": 2.150182418525709e-07,
+        "hand_l": 2.4027400458748785e-07,
+        "clavicle_r": 1.1920928955078125e-07,
+        "upperarm_r": 1.3328003749250123e-07,
+        "lowerarm_r": 2.150182418525709e-07,
+        "hand_r": 2.4027400458748785e-07,
+        "thigh_l": 1.4901161193847656e-08,
+        "calf_l": 1.4901161193847656e-08,
+        "foot_l": 8.429369702178807e-08,
+        "thigh_r": 1.4901161193847656e-08,
+        "calf_r": 1.4901161193847656e-08,
+        "foot_r": 8.429369702178807e-08
+      }
+    },
+    {
+      "name": "bulwark_LOD2_rigid_weights",
+      "passed": true,
+      "evidence": 1798
+    },
+    {
+      "name": "bulwark_LOD2_slots",
+      "passed": true,
+      "evidence": [
+        "Gunmetal",
+        "Armor",
+        "Brass",
+        "Rubber",
+        "Signal"
+      ]
+    },
+    {
+      "name": "bulwark_LOD2_uv",
+      "passed": true,
+      "evidence": 1
+    },
+    {
+      "name": "bulwark_LOD2_armature",
+      "passed": true,
+      "evidence": [
+        "ARMATURE"
+      ]
+    },
+    {
+      "name": "bulwark_LOD2_rigid_panel_motion",
+      "passed": true,
+      "evidence": {
+        "bone_groups_tested": 19,
+        "max_distance_error_m": 7.833342974272739e-08
+      }
+    },
+    {
+      "name": "vanguard_base_portable_file_reference",
+      "passed": true,
+      "evidence": "ArtSource/Textures/robots/vanguard/T_IE_vanguard_BaseColor.png"
+    },
+    {
+      "name": "vanguard_base_size",
+      "passed": true,
+      "evidence": [
+        2048,
+        2048
+      ]
+    },
+    {
+      "name": "vanguard_base_colorspace",
+      "passed": true,
+      "evidence": "sRGB"
+    },
+    {
+      "name": "vanguard_base_pixels",
+      "passed": true,
+      "evidence": 16777216
+    },
+    {
+      "name": "vanguard_orm_portable_file_reference",
+      "passed": true,
+      "evidence": "ArtSource/Textures/robots/vanguard/T_IE_vanguard_ORM.png"
+    },
+    {
+      "name": "vanguard_orm_size",
+      "passed": true,
+      "evidence": [
+        2048,
+        2048
+      ]
+    },
+    {
+      "name": "vanguard_orm_colorspace",
+      "passed": true,
+      "evidence": "Non-Color"
+    },
+    {
+      "name": "vanguard_orm_pixels",
+      "passed": true,
+      "evidence": 16777216
+    },
+    {
+      "name": "vanguard_normal_portable_file_reference",
+      "passed": true,
+      "evidence": "ArtSource/Textures/robots/vanguard/T_IE_vanguard_Normal.png"
+    },
+    {
+      "name": "vanguard_normal_size",
+      "passed": true,
+      "evidence": [
+        2048,
+        2048
+      ]
+    },
+    {
+      "name": "vanguard_normal_colorspace",
+      "passed": true,
+      "evidence": "Non-Color"
+    },
+    {
+      "name": "vanguard_normal_pixels",
+      "passed": true,
+      "evidence": 16777216
+    },
+    {
+      "name": "vanguard_uv_surface_coverage",
+      "passed": true,
+      "evidence": {
+        "covered": 1048,
+        "samples": 1048
+      }
+    },
+    {
+      "name": "vanguard_tangent_normal_length",
+      "passed": true,
+      "evidence": {
+        "valid": 1048,
+        "samples": 1048
+      }
+    },
+    {
+      "name": "vanguard_paint_metallic_budget",
+      "passed": true,
+      "evidence": {
+        "range": [
+          0.13333334028720856,
+          0.1568627506494522
+        ]
+      }
+    },
+    {
+      "name": "vanguard_steel_metallic",
+      "passed": true,
+      "evidence": {
+        "range": [
+          0.9294118285179138,
+          0.9294118285179138
+        ]
+      }
+    },
+    {
+      "name": "bulwark_base_portable_file_reference",
+      "passed": true,
+      "evidence": "ArtSource/Textures/robots/bulwark/T_IE_bulwark_BaseColor.png"
+    },
+    {
+      "name": "bulwark_base_size",
+      "passed": true,
+      "evidence": [
+        2048,
+        2048
+      ]
+    },
+    {
+      "name": "bulwark_base_colorspace",
+      "passed": true,
+      "evidence": "sRGB"
+    },
+    {
+      "name": "bulwark_base_pixels",
+      "passed": true,
+      "evidence": 16777216
+    },
+    {
+      "name": "bulwark_orm_portable_file_reference",
+      "passed": true,
+      "evidence": "ArtSource/Textures/robots/bulwark/T_IE_bulwark_ORM.png"
+    },
+    {
+      "name": "bulwark_orm_size",
+      "passed": true,
+      "evidence": [
+        2048,
+        2048
+      ]
+    },
+    {
+      "name": "bulwark_orm_colorspace",
+      "passed": true,
+      "evidence": "Non-Color"
+    },
+    {
+      "name": "bulwark_orm_pixels",
+      "passed": true,
+      "evidence": 16777216
+    },
+    {
+      "name": "bulwark_normal_portable_file_reference",
+      "passed": true,
+      "evidence": "ArtSource/Textures/robots/bulwark/T_IE_bulwark_Normal.png"
+    },
+    {
+      "name": "bulwark_normal_size",
+      "passed": true,
+      "evidence": [
+        2048,
+        2048
+      ]
+    },
+    {
+      "name": "bulwark_normal_colorspace",
+      "passed": true,
+      "evidence": "Non-Color"
+    },
+    {
+      "name": "bulwark_normal_pixels",
+      "passed": true,
+      "evidence": 16777216
+    },
+    {
+      "name": "bulwark_uv_surface_coverage",
+      "passed": true,
+      "evidence": {
+        "covered": 1048,
+        "samples": 1048
+      }
+    },
+    {
+      "name": "bulwark_tangent_normal_length",
+      "passed": true,
+      "evidence": {
+        "valid": 1048,
+        "samples": 1048
+      }
+    },
+    {
+      "name": "bulwark_paint_metallic_budget",
+      "passed": true,
+      "evidence": {
+        "range": [
+          0.13333334028720856,
+          0.16078431904315948
+        ]
+      }
+    },
+    {
+      "name": "bulwark_steel_metallic",
+      "passed": true,
+      "evidence": {
+        "range": [
+          0.9294118285179138,
+          0.9294118285179138
+        ]
+      }
+    }
+  ],
+  "passed": 84,
+  "total": 84,
+  "unreal_verified": false,
+  "windows_verified": false
+}

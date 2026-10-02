@@ -1,12 +1,10 @@
 # IRON ECHO
 
-Игра о боксе оригинальных роботов с управлением движениями человека через камеру. Unreal Engine + Blender + MediaPipe. Репозиторий предназначен для совместной разработки Codex и Claude Opus 5.5 на Windows-ПК владельца.
+Оригинальный бокс роботов с управлением движениями человека через камеру. Unreal Engine + Blender + MediaPipe. Codex отвечает за графику; Claude Opus 5.5 — за технический проект, трекинг, игровой бой, интеграцию и сборки.
 
-**Текущее состояние:** подготовлена первая графическая итерация. Две модели, общий скелет и восемь FBX-анимаций созданы и проверены в Blender. UI-макеты проверены отдельными Python-проверками источников. Unreal-проект, gameplay и MediaPipe-интеграция ещё не созданы в этом репозитории. Скрипты Unreal подготовлены, но не запущены в движке.
+**Последняя графическая поставка — 0.3:** запечённые PBR-текстуры и две облегчённые модели каждого бойца. Они созданы и проверены в Blender 4.5.7 LTS. Исходники UMG/камеры/VFX 0.2-draft и editor-скрипты Unreal подготовлены, но **в движке ещё не запускались**. .uproject, MediaPipe runtime и законченного боя в репозитории пока нет.
 
-Добавлены исходники `IronEchoVisuals 0.2-draft`: нативные UMG меню/HUD, камера из-за плеча и косметические искры. Они лежат в `IntegrationDraft` и ещё **не скомпилированы/не подключены**. Инструкция для Opus: [runtime-visuals.md](Docs/Handoffs/Codex/runtime-visuals.md).
-
-![Роботы Vanguard и Bulwark — Blender-рендер](Previews/robots-studio.png)
+![Запечённые материалы — настоящий Blender-рендер, не скриншот игры](Previews/robots-textured-studio.png)
 
 ## Продолжение на Windows
 
@@ -15,29 +13,43 @@ git clone https://github.com/sNibaAdeka/iron-echo.git
 cd iron-echo
 ```
 
-Репозиторий приватный. Git должен быть авторизован в аккаунте владельца; пароль или токен не надо отправлять в чат. При установленном GitHub CLI можно пройти `gh auth login` на самом Windows-ПК и клонировать через `gh repo clone sNibaAdeka/iron-echo`.
+Репозиторий приватный: Git должен быть авторизован в аккаунте владельца. При установленном GitHub CLI можно использовать gh auth login и gh repo clone sNibaAdeka/iron-echo. Пароль и токен не надо отправлять в чат.
 
-Открой клонированную папку в локальном агенте и начни с [WINDOWS_START.md](WINDOWS_START.md), [PROJECT_STATE.md](PROJECT_STATE.md) и [AGENTS.md](AGENTS.md). Общий замысел и задания обеим моделям находятся в [Docs/Briefs](Docs/Briefs).
+Открой папку в локальном агенте. Прочитай [AGENTS.md](AGENTS.md), [WINDOWS_START.md](WINDOWS_START.md), общий [PROJECT_STATE.md](PROJECT_STATE.md) и **последний [статус Codex](Docs/Handoffs/Codex/STATUS.md)**. PROJECT_STATE отражает предыдущую интеграционную точку; после приёма новой передачи его ведёт Opus. Не начинай выбор концепции заново.
 
-Codex отвечает за графику и визуальные ассеты. Opus создаёт технический проект, MediaPipe, правила боя, бота и сборку. Черновой визуальный контракт требует проверки Opus до подключения gameplay.
+На Windows Unreal уже установлен по сообщению владельца; реальные версия, toolchain и VRAM ещё не определены. Сначала подтвердить базовый импорт и скелет, затем материалы/LOD и runtime plugin. Подготовленные asset/presentation contracts остаются drafts до проверки Opus в UE.
 
-## Что находится в репозитории
+## Создано и проверено
+
+- Vanguard и Bulwark: реальные .blend/FBX, общий скелет из 20 костей и 5 материальных слотов.
+- Восемь animation FBX: Idle, Guard, Straight_L/R, Dodge_L/R, HitReact, KO; прежние 50 проверок Blender.
+- LOD0/1/2: **9432 / 5658 / 3300** triangles на каждого бойца.
+- Шесть собственных PBR PNG 2048²: BaseColor, ORM и tangent Normal на каждого робота.
+- Дополнение 0.3: **84/84 проверок Blender**, включая FBX round trips, жёстких весов и положений суставов, UV и внешних ссылок на текстуры.
+- Три новых offline Blender renders: материалы и два LOD comparisons.
+- UI-источники: семантическая тема,9 SVG-иконок, 6 макетов; offline contrast/layout/icon checks 17/6/9.
+
+Это проверки ассетов и источников, а не подтверждение FPS, UMG, IK или camera tracking в игре. Модели остаются первой технической художественной итерацией; качество крупной студии не заявлено.
+
+## Файлы
 
 | Папка | Содержимое |
 |---|---|
-| ArtSource/Blender | Реальные .blend двух роботов и презентационной сцены |
-| ArtSource/exports | Skeletal FBX, восемь animation FBX и manifest |
-| ArtSource/UI | Тема, SVG-иконки и макеты меню/HUD |
-| Tools/Blender | Генератор моделей и Blender round-trip проверки |
-| Tools/Unreal/Art | Подготовленные import/validate/arena editor-скрипты |
-| Tools/UI | Генератор UI-источников и проверки доступности |
-| IntegrationDraft/IronEchoVisuals | Исходники runtime-плагина представления и инструкция подключения |
-| Docs/Art | Направление, отчёты Blender и UMG-спецификация |
-| Docs/Contracts | Черновой контракт скелета, анимаций и сокетов |
-| Docs/Handoffs/Codex | Передача визуальной части Opus |
-| Docs/Briefs | Большой промт и разделение работы |
+| ArtSource/Blender | Базовые модели, LOD и textured lookdev scenes |
+| ArtSource/exports | Base FBX, 8 animation FBX, 4 LOD FBX и manifests |
+| ArtSource/Textures/robots | 6 PBR PNG и texture manifest |
+| ArtSource/UI | Тема, SVG icons и UI mockups |
+| Tools/Blender | Воспроизводимые генераторы, bake, render и actual Blender QA |
+| Tools/Unreal/Art | Prepared import/validate/arena/quality editor scripts |
+| IntegrationDraft/IronEchoVisuals | Нативные UMG menu/HUD, shoulder camera и cosmetic impacts; C++ build unverified |
+| Docs/Art | Направление, инструкции и фактические отчёты |
+| Docs/Contracts | Черновой визуальный контракт |
+| Docs/Handoffs/Codex | Последний статус и передачи интегратору |
+| Docs/Briefs | Большой промт, разделение работы и стартовые задания |
 
-Бесплатная локальная проверка файлов без Unreal:
+Интеграция 0.3: [SURFACE_LOD_GUIDE.md](Docs/Art/SURFACE_LOD_GUIDE.md) и [передача Opus](Docs/Handoffs/Codex/surface-lods.md). Runtime 0.2: [README плагина](IntegrationDraft/IronEchoVisuals/README.md). У бинарных файлов один автор в момент записи.
+
+## Проверка без Unreal
 
 ```powershell
 python Tools/QA/verify_package.py
@@ -45,71 +57,10 @@ python Tools/UI/verify_ui.py
 python Tools/UI/generate_runtime_theme.py --check
 ```
 
-Проверки этих команд не подтверждают runtime игры или FPS на RTX 3050. Подробности визуального пакета приведены ниже; актуальный статус продолжения — в PROJECT_STATE.md.
+Проверка Blender 0.3 и воспроизведение изображений описаны в SURFACE_LOD_GUIDE. OpenGL normals требуют Unreal Flip Green Channel=true; ORM AO намеренно1. LOD снижает геометрию, но сохраняет 5 sections и сам по себе не гарантирует меньшие draw calls или нужный FPS.
 
----
+## Следующие проверки
 
-## Первый визуальный пакет Codex
+Unreal centimetres/+X-forward, skeleton/socket offsets, imported clips, tangents/LOD transitions, materials/mips/cook; затем принятые gameplay adapters и C++ build. Далее actual UMG/IK/camera/VFX, остальные экраны, выход бойцов и packaged Windows с реальным FPS/VRAM на RTX 3050. Эти проверки пока не выполнены.
 
-Это реальные процедурные 3D-ассеты и подготовленная автоматизация редактора, а не готовая игра. Два робота, общий скелет, восемь анимационных FBX, графические исходники и UI-макеты созданы. Unreal не установлен в среде подготовки; его скрипты ещё не запускались в движке. Windows, управление камерой, runtime IK и FPS на RTX 3050 не проверены.
-
-## Что уже проверено
-
-- Blender 4.5.7 LTS: генерация обеих моделей и реальный FBX-экспорт.
-- По 9432 треугольника, 4864 вершины, 20 костей и пять слотов материалов на робота.
-- Высота в исходной позе — 2.1485 м. Каждый vertex имеет один rigid bone weight; непривязанных вершин нет.
-- 50/50 проверок: веса, UV, направление движения кулаков, отсутствие растяжения цепей, отсутствие root motion, FBX round-trip и длительности клипов.
-- UI-источники: 17/17 пар контраста, 6/6 компоновок и 9/9 SVG-иконок. Это SVG-макеты и UMG-спецификация, не работающие UMG Widgets.
-
-Отчёты: Docs/Art/BLENDER_BUILD_REPORT.json, BLENDER_QA_REPORT.json и ArtSource/UI/contrast_report.json.
-
-## Запуск на твоём Windows-ПК с установленным Unreal
-
-1. Распакуй весь пакет в стабильную папку, например `D:\Games\IronEchoVisuals`. Не переносить отдельно папку Tools: она использует относительный manifest.
-2. Opus создаёт или открывает технический проект IronEcho; этот пакет не меняет `.uproject`, gameplay или Config.
-3. В Unreal включи Python Editor Script Plugin и Editor Scripting Utilities, затем перезапусти редактор.
-4. Сохрани уровень и остальные изменения; останови Play In Editor. Другой агент не должен писать в эту же рабочую копию.
-5. Выбери File → Execute Python Script и укажи `Tools\Unreal\Art\run_art_setup.py` из распакованного пакета.
-6. При поддерживаемом API скрипт импортирует двух роботов и клипы, проверит данные и создаст карту `/Game/Art/IronEcho/Arena/L_IE_ArtSandbox`.
-7. Результаты исполнения появятся в `Saved\IronEchoArtReports` твоего Unreal-проекта. Сохрани их для разбора реальных ошибок.
-
-API-основа подготовленных скриптов — классический FBX importer Unreal 5.6. Совместимость с установленной у тебя версией не подтверждена. Если движок сообщает о недоступном свойстве или importer, нужна адаптация под его версию; скрипт не должен молча считать импорт успешным.
-
-Если Fist_L/R нельзя создать через Python этой версии, их нужно добавить в Skeleton Editor на hand_l/r и повторить проверку. Это предварительные нулевые offsets: игровой контактный центр должен отдельно проверить Opus.
-
-Повторный запуск не перезаписывает готовые ассеты автоматически. Для исправлений сначала передать право записи, затем явно использовать `--replace` в соответствующем скрипте или создать новую sandbox-карту. Не удалять чужие ассеты для обхода проверки.
-
-## Передача Opus
-
-Дай Opus этот пакет, robot-boxing-master-prompt.md и robot-boxing-team-plan.md. Контракт находится в `Docs/Contracts/ROBOT_VISUAL_CONTRACT_DRAFT.md` и требует его принятия до gameplay-интеграции.
-
-Попроси выполнить сначала импорт и сохранить отчёты. После реального импорта проверить сантиметры, +X-forward, стороны рук, Skeleton, материальные слоты и анимации. Дальше подключать позу MediaPipe и события подтверждённого попадания к визуальной части.
-
-Codex отвечает за дальнейшие графические исправления; Opus — за технический проект и авторитетные игровые правила. После импорта следующий этап — согласовать и скомпилировать отдельный черновик IntegrationDraft/IronEchoVisuals по его README. SVG-макеты и fixed sandbox-камеры сами по себе не подтверждают его работу.
-
-## Воспроизводимость Blender
-
-```text
-blender --background --factory-startup --python Tools/Blender/build_robots.py -- --package . --quick-render
-blender --background --factory-startup --python Tools/Blender/verify_robots.py -- --package .
-```
-
-Генератор создаёт свои выходные `.blend`, `.fbx`, manifest и preview; запускать его из этого пакета, а не поверх чужих исходников. Для корректной сравнимости использовать подтверждённую версию Blender 4.5.7 либо отдельно проверить новую версию.
-
-## Ограничения первого пакета
-
-- Модели — первая техническая итерация промышленного силуэта; качество большой студии не заявлено.
-- LOD-модели и работающий IK solver ещё не реализованы. Исходники runtime UMG/камеры/VFX добавлены в 0.2-draft; сборка и поведение в UE не проверены.
-- KO — упрощённая реакция корпусом, не падение и не ragdoll.
-- Blender procedural noise не переносится напрямую через FBX; Unreal-скрипт создаёт упрощённые PBR-материалы.
-- WearAmount изменяет материал целиком; локальные следы каждого удара требуют дополнительной реализации.
-- Основная карта, свет и камеры здесь существуют как скрипты генерации, а не как проверенные `.uasset/.umap`.
-- Preview robots-studio.png — реальный Blender-рендер моделей, не скриншот игры.
-
-## Источники API
-
-- [Blender FBX export](https://docs.blender.org/api/4.5/bpy.ops.export_scene.html).
-- [Редакторский Python Unreal](https://dev.epicgames.com/documentation/en-us/unreal-engine/scripting-the-unreal-editor-using-python).
-- [SkeletalMesh Python API 5.6](https://dev.epicgames.com/documentation/en-us/unreal-engine/python-api/class/SkeletalMesh?application_version=5.6).
-
-Внешние 3D-модели, платные ассеты и материалы чужих франшиз не использованы. Иконки и модели процедурно созданы в этом пакете; используемые Blender/Unreal имеют собственные условия лицензирования.
+Модели, материалы и иконки созданы собственными генераторами. Сторонние платные ассеты не покупались; объекты и материалы чужих франшиз не использованы.

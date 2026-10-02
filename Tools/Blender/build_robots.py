@@ -483,7 +483,10 @@ def main():
         "clips": list(CLIPS),
         "limitations": ["Unreal import and target-Windows FPS not verified", "No live IK solver/runtime plugin in this package", "KO clip is stylized bow, not ragdoll", "No LOD meshes yet", "Procedural Blender noise recreated approximately in Unreal materials"],
     }
-    files = list((package/"ArtSource"/"exports").rglob("*.fbx"))
+    export_root = package/"ArtSource"/"exports"
+    # Quality exports have their own manifest and dependency snapshot.
+    files = [export_root/f"{ident}.fbx" for ident in VARIANTS]
+    files += [export_root/"animations"/f"{name}.fbx" for name in CLIPS]
     manifest["files_sha256"] = {str(p.relative_to(package/"ArtSource"/"exports")): hashlib.sha256(p.read_bytes()).hexdigest() for p in files}
     (package/"ArtSource"/"exports"/"art_manifest.json").write_text(json.dumps(manifest, indent=2), encoding="utf-8")
     (package/"Docs"/"Art"/"BLENDER_BUILD_REPORT.json").write_text(json.dumps({"blender_version": bpy.app.version_string, "robots": reports, "animations_exported": list(CLIPS), "unreal_verified": False}, indent=2), encoding="utf-8")
