@@ -2,10 +2,13 @@
 #include "Camera/CameraComponent.h"
 #include "Components/SceneComponent.h"
 #include "GameFramework/SpringArmComponent.h"
+#include "IEImpactValidation.h"
+#include "HAL/PlatformTime.h"
 
 AIEVisualCameraRig::AIEVisualCameraRig()
 {
     PrimaryActorTick.bCanEverTick=true;
+    PrimaryActorTick.bTickEvenWhenPaused=true;
     PrimaryActorTick.TickGroup=TG_PostPhysics;
     SetRootComponent(CreateDefaultSubobject<USceneComponent>(TEXT("VisualRoot")));
     CameraArm=CreateDefaultSubobject<USpringArmComponent>(TEXT("ShoulderArm"));
@@ -30,36 +33,40 @@ void AIEVisualCameraRig::FollowRobot(AActor* Robot,AActor* Opponent)
     LookTarget=Opponent==this ? nullptr : Opponent;
     bFirstFollow=true;
     if (IsValid(Robot) && Robot!=this) AddTickPrerequisiteActor(Robot);
-    KickTime=0.f; KickStrength=0.f;
+    ContactPulse.Reset();
     Camera->SetRelativeLocation(FVector::ZeroVector);
 }
 void AIEVisualCameraRig::SetReducedMotion(bool Reduce)
 {
     bReducedMotion=Reduce;
-    if (Reduce) { KickTime=0.f; KickStrength=0.f; Camera->SetRelativeLocation(FVector::ZeroVector); }
+    if (Reduce) { ContactPulse.Reset(); Camera->SetRelativeLocation(FVector::ZeroVector); }
+}
+bool AIEVisualCameraRig::ApplyConfirmedImpact(const FIEConfirmedImpact& Event)
+{
+    if (!IsInGameThread() || !IEIsUsableImpact(Event) || !ContactHistory.Accept(IEImpactKey(Event.EventId))) return false;
+    ApplyConfirmedContactKick(Event.VisualIntensity);
+    return true;
 }
 void AIEVisualCameraRig::ApplyConfirmedContactKick(float Intensity)
 {
     if (bReducedMotion || !FMath::IsFinite(Intensity)) return;
-    KickTime=0.16f;
-    KickStrength=FMath::Clamp(Intensity,0.f,1.f)*FMath::Clamp(ShakeScale,0.f,1.f)*1.5f;
+    ContactPulse.Start(Intensity,ShakeScale,FPlatformTime::Seconds());
 }
 void AIEVisualCameraRig::Tick(float Delta)
 {
     Super::Tick(Delta);
     AActor* Robot=FollowTarget.Get();
-    if (!IsValid(Robot)) { Camera->SetRelativeLocation(FVector::ZeroVector); return; }
+    if (!IsValid(Robot))
+    { ContactPulse.Reset(); bFirstFollow=true; Camera->SetRelativeLocation(FVector::ZeroVector); return; }
     const FVector Anchor=Robot->GetActorTransform().TransformPosition(FollowOffset);
     FRotator Facing=Robot->GetActorRotation();
     if (AActor* Opponent=LookTarget.Get(); IsValid(Opponent))
         Facing=(Opponent->GetActorTransform().TransformPosition(OpponentAimOffset)-Anchor).Rotation();
     Facing.Roll=0.f;
     Facing.Pitch=FMath::Clamp(Facing.Pitch,-20.0,15.0);
-    const float Speed=FMath::Max(1.f,FollowSpeed);
+    const float Speed=FMath::IsFinite(FollowSpeed) ? FMath::Max(1.f,FollowSpeed) : 8.f;
     SetActorLocation(bFirstFollow ? Anchor : FMath::VInterpTo(GetActorLocation(),Anchor,Delta,Speed));
     SetActorRotation(bFirstFollow ? Facing : FMath::RInterpTo(GetActorRotation(),Facing,Delta,Speed));
     bFirstFollow=false;
-    KickTime=FMath::Max(0.f,KickTime-Delta);
-    const float Fade=KickTime/.16f;
-    Camera->SetRelativeLocation(FVector(0.f,0.f,bReducedMotion ? 0.f : FMath::Sin(Fade*PI*3.f)*Fade*KickStrength));
+    Camera->SetRelativeLocation(FVector(0.f,0.f,bReducedMotion ? 0.0 : ContactPulse.OffsetCm(FPlatformTime::Seconds())));
 }

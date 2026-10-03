@@ -1,0 +1,16 @@
+{
+  "checked_at_utc": "2026-10-03T08:05:23.703718+00:00",
+  "status": "PASS",
+  "scope": "Compiled engine-independent policy used by the runtime sources; 10 behavioral scenarios",
+  "compiler": "clang++",
+  "stdout": "PASS: 10 portable contact-policy scenarios; Unreal module/UHT/runtime NOT tested.",
+  "source_sha256": {
+    "IntegrationDraft/IronEchoVisuals/Source/IronEchoVisuals/Public/IEContactPolicy.h": "a510ce96895229032d17080f8eac81aa459b230eaa4efc147d6320dde908f1cd",
+    "Tools/QA/contact_policy_tests.cpp": "bdadf18f7b3bc5c44b7ff3dfd4578877644c84262247e25fb72323f01ed973f0",
+    "Tools/QA/run_contact_policy_tests.py": "1d630a4964aa28d60ea43ab0223bcd4973881128f71fdf3db59fa471db137e12"
+  },
+  "unreal_module_compiled": false,
+  "uht_checked": false,
+  "anim_graph_checked": false,
+  "windows_runtime_checked": false
+}

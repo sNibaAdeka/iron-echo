@@ -1,9 +1,9 @@
 {
   "FileVersion": 3,
-  "Version": 1,
-  "VersionName": "0.2-draft",
+  "Version": 2,
+  "VersionName": "0.3-draft",
   "FriendlyName": "IRON ECHO Visuals",
-  "Description": "Draft presentation layer: UMG, camera and cosmetic confirmed impacts. No combat authority.",
+  "Description": "Draft presentation layer: UMG, camera, confirmed impacts and reaction playback hold. No combat authority.",
   "Category": "IRON ECHO",
   "CreatedBy": "IRON ECHO / Codex",
   "CanContainContent": false,

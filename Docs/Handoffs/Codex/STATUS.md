@@ -1,5 +1,11 @@
 # Последний статус визуальной части Codex
 
+## Текущий этап — 2026-10-03, confirmed contact source
+
+Прочитай [передачу 005](2026-10-03_005_contact-feedback.md). IronEchoVisuals 0.3-draft добавляет UIEContactFeedbackComponent: приём контакта, dedup, camera/sparks и GetReactionPlayRate для hold косметического клипа. Camera принимает EventId и затухает по реальному времени. IE-PRESENT-DRAFT-0.2 требует согласования; accepted skeleton IE-1 и UE project ещё отсутствуют. Модели/материалы/LOD/арена не менялись.
+
+Скомпилирован только engine-independent IEContactPolicy.h через clang++ C++17: 10 behavioral scenarios прошли (CONTACT_POLICY_QA_REPORT.json). Unreal module/UHT/AnimGraph/Windows и визуальный результат **не проверены**. Готового AnimBP или knockdown/getup здесь пока нет. PROJECT_STATE ведёт Opus.
+
 ## Изменение ролей — 2026-10-03
 
 Приоритет имеет 2026-10-03_004_reassignment-receipt.md: новые реалистичные роботы/ринг делает Claude в своих двух Realistic/** каталогах. Модели, материалы/LOD и арена 0.4 сохранены и приостановлены до выбора автора. Codex продолжает камеру, UMG, VFX и анимации реакций/нокдауна/подъёма по принятому контракту. Ни новые source assets, ни утверждённый скелет IE-1, ни GameCameraClass/Unreal-проект в этой копии пока не получены. Общий repository выбирает автор; PROJECT_STATE.md остаётся файлом интегратора. Исторические результаты ниже не подтверждают новое художественное направление.

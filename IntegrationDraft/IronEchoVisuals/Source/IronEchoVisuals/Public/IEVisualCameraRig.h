@@ -1,6 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+#include "IEVisualTypes.h"
+#include "IEContactPolicy.h"
 #include "IEVisualCameraRig.generated.h"
 
 class UCameraComponent;
@@ -14,7 +16,9 @@ public:
     AIEVisualCameraRig();
     UFUNCTION(BlueprintCallable) void FollowRobot(AActor* Robot, AActor* Opponent);
     UFUNCTION(BlueprintCallable) void SetReducedMotion(bool bReduce);
-    UFUNCTION(BlueprintCallable) void ApplyConfirmedContactKick(float VisualIntensity);
+    UFUNCTION(BlueprintCallable) bool ApplyConfirmedImpact(const FIEConfirmedImpact& Event);
+    UFUNCTION(BlueprintCallable, meta=(DeprecatedFunction, DeprecationMessage="Use ApplyConfirmedImpact with a gameplay EventId."))
+    void ApplyConfirmedContactKick(float VisualIntensity);
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Visual Camera") float FollowSpeed=8.f;
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Visual Camera") float ShakeScale=0.5f;
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Visual Camera") FVector FollowOffset=FVector(0.f,0.f,160.f);
@@ -27,6 +31,6 @@ private:
     UPROPERTY(Transient) TWeakObjectPtr<AActor> LookTarget;
     bool bReducedMotion=false;
     bool bFirstFollow=true;
-    float KickTime=0.f;
-    float KickStrength=0.f;
+    IronEchoPresentation::FCameraPulse ContactPulse;
+    IronEchoPresentation::FEventHistory ContactHistory;
 };

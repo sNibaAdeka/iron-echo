@@ -4,6 +4,8 @@
 
 **Актуальная передача ролей — [004](Docs/Handoffs/Codex/2026-10-03_004_reassignment-receipt.md), принято 2026-10-03.** Модели, материалы/LOD и арена 0.4 сохранены и приостановлены; художественный вид автором не принят. Claude владеет двумя Realistic/** каталогами. Общий репозиторий окончательно выбирает автор.
 
+**Новый этап Codex — [confirmed-contact feedback 005](Docs/Handoffs/Codex/2026-10-03_005_contact-feedback.md):** IronEchoVisuals 0.3-draft добавляет единый вход попаданий, защиту от повторов, real-time camera pulse и управление временем косметического reaction clip. 10 portable C++ scenarios прошли; Unreal module/UHT/AnimGraph ещё не проверены. Модели и ринг на этом этапе не менялись.
+
 **Последняя проверенная архивная графическая поставка — 0.4:** оригинальная промышленная арена, свет и offline камера боя; перед ней 0.3 добавила запечённые PBR-текстуры и две облегчённые модели каждого бойца. Ассеты созданы и проверены в Blender 4.5.7 LTS. Исходники UMG/камеры/VFX 0.2-draft и editor-скрипты Unreal подготовлены, но **в движке ещё не запускались**. .uproject, MediaPipe runtime и законченного боя в репозитории пока нет.
 
 ![Запечённые материалы — настоящий Blender-рендер, не скриншот игры](Previews/robots-textured-studio.png)
@@ -52,7 +54,7 @@ cd iron-echo
 | Docs/Handoffs/Codex | Последний статус и передачи интегратору |
 | Docs/Briefs | Большой промт, разделение работы и стартовые задания |
 
-Арена 0.4: [ARENA_GUIDE.md](Docs/Art/ARENA_GUIDE.md) и [передача Opus](Docs/Handoffs/Codex/arena-camera.md). Материалы/LOD 0.3: [SURFACE_LOD_GUIDE.md](Docs/Art/SURFACE_LOD_GUIDE.md) и [передача](Docs/Handoffs/Codex/surface-lods.md). Runtime 0.2: [README плагина](IntegrationDraft/IronEchoVisuals/README.md). У бинарных файлов один автор в момент записи.
+Арена 0.4: [ARENA_GUIDE.md](Docs/Art/ARENA_GUIDE.md) и [передача Opus](Docs/Handoffs/Codex/arena-camera.md). Материалы/LOD 0.3: [SURFACE_LOD_GUIDE.md](Docs/Art/SURFACE_LOD_GUIDE.md) и [передача](Docs/Handoffs/Codex/surface-lods.md). Runtime 0.3-draft: [README плагина](IntegrationDraft/IronEchoVisuals/README.md). У бинарных файлов один автор в момент записи.
 
 ## Проверка без Unreal
 
