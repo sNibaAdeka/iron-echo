@@ -1,5 +1,13 @@
 # Последний статус визуальной части Codex
 
+## Текущий этап — 2026-10-03, восстановлен проект Claude
+
+Прочитай [передачу 006](2026-10-03_006_recovered-project.md). Реальный Unreal-проект и контракт 1.1
+получены из bundle и опубликованы с исходной историей в `claude/recovered-wizardly-pascal`.
+Camera/contact adapter и точный registration patch — ветка `codex/contract-1.1-integration`, commit 2005a0f.
+Старые утверждения ниже об отсутствии проекта/контракта теперь исторические. Патч регистрации не применён;
+HUD/menu adapter и настоящий AnimBP ещё предстоят. Unreal/Windows runtime не проверены.
+
 ## Текущий этап — 2026-10-03, confirmed contact source
 
 Прочитай [передачу 005](2026-10-03_005_contact-feedback.md). IronEchoVisuals 0.3-draft добавляет UIEContactFeedbackComponent: приём контакта, dedup, camera/sparks и GetReactionPlayRate для hold косметического клипа. Camera принимает EventId и затухает по реальному времени. IE-PRESENT-DRAFT-0.2 требует согласования; accepted skeleton IE-1 и UE project ещё отсутствуют. Модели/материалы/LOD/арена не менялись.

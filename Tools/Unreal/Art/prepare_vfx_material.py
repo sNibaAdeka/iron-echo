@@ -34,7 +34,7 @@ def main():
                     raise RuntimeError("Failed to connect spark material pin: " + pin)
             if not lib.connect_material_property(multiply, "", unreal.MaterialProperty.MP_EMISSIVE_COLOR):
                 raise RuntimeError("Failed to connect spark emissive output")
-            lib.set_material_usage(material, unreal.MaterialUsage.MATUSAGE_INSTANCED_STATIC_MESH)
+            lib.set_material_usage(material, unreal.MaterialUsage.MATUSAGE_INSTANCED_STATIC_MESHES)
             lib.layout_material_expressions(material)
             lib.recompile_material(material)
             save_asset(material)
