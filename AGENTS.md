@@ -1,14 +1,19 @@
 # IRON ECHO — общие инструкции агентам
 
+## Актуальное решение автора — принято 2026-10-03
+
+Сначала прочитай Docs/Handoffs/Codex/2026-10-03_004_reassignment-receipt.md. Оно имеет приоритет над прежними ролями в больших промтах: Claude владеет ArtSource/Realistic/** и Tools/Blender/Realistic/** и делает новые роботы/ринг. Codex приостанавливает модели, материалы/LOD и арену codex-art-v0.4, сохраняет их без удаления и продолжает камеру, UI, VFX и визуальную анимацию по принятому контракту. Не запускай старые robot/arena generators или run_art_setup автоматически для нового вида. Общий репозиторий ещё выбирает автор; публичная Art поставка не означает права записи Claude или завершённой интеграции.
+
 Прочитай PROJECT_STATE.md, Docs/Briefs/robot-boxing-team-plan.md и Docs/Briefs/robot-boxing-master-prompt.md перед изменениями. Пользователь продолжает существующий проект с другого компьютера; не начинай замысел заново.
 
 ## Роли
 
-- Codex: оригинальные модели Blender, скелет, визуальная анимация/IK, материалы, свет, арена, VFX, камера, UMG и визуальная проверка.
+- Codex: камера, UMG, VFX, реакции и визуальная анимация/IK по принятому скелету; старые модели/материалы/LOD/арена приостановлены.
 - Claude Opus 5.5: .uproject, Config, технические C++-модули, Tracking/MediaPipe, игровые правила, бот, интеграция, упаковка и будущий онлайн.
+- Claude: новые реалистичные source robots/ring в ArtSource/Realistic и Tools/Blender/Realistic; исключительный автор этих каталогов.
 - Пользователь: автор, владелец аккаунтов и испытатель движения перед камерой. Не поручай ему обычное написание кода.
 
-Codex владеет ArtSource, Tools/Blender, Tools/Unreal/Art, Tools/UI, Docs/Art, Docs/Handoffs/Codex, IntegrationDraft/IronEchoVisuals и будущим Game/Content/Art. Opus владеет будущим Game/IronEcho.uproject, Game/Config, Game/Source, Game/Content/Gameplay, Tracking и Tools/Build. Общий контракт меняется одним автором после согласования новой версии. Черновик плагина переносится в Game/Plugins после согласования интегратором; до этого он не зарегистрирован в проекте.
+Codex владеет остальными ArtSource и Tools/Blender за исключением ArtSource/Realistic/** и Tools/Blender/Realistic/**, Tools/Unreal/Art, Tools/UI, Docs/Art, Docs/Handoffs/Codex, IntegrationDraft/IronEchoVisuals и будущим Game/Content/Art. Opus владеет будущим Game/IronEcho.uproject, Game/Config, Game/Source, Game/Content/Gameplay, Tracking и Tools/Build. Общий контракт меняется одним автором после согласования новой версии. Черновик плагина переносится в Game/Plugins после согласования интегратором; до этого он не зарегистрирован в проекте.
 
 Не отменяй изменения другого исполнителя. Не открывай два редактора на одну рабочую копию. .blend/.uasset/.umap имеют одного владельца на запись; их нельзя автоматически сливать как обычный текст. Данные с камеры и секреты не включать в Git.
 
